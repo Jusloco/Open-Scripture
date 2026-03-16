@@ -32,7 +32,7 @@ export default function AskPage() {
 
       {/* Footer note */}
       <p className="text-xs text-zinc-400 text-center mt-3">
-        Responses are rule-based and drawn from established manuscript scholarship. Always verify with primary sources.
+        Common questions answered from curated scholarship · others routed to AI · always verify with primary sources.
       </p>
     </div>
   )
