@@ -36,7 +36,7 @@ const TYPE_DESCRIPTIONS: Record<Tab, string> = {
 function WitnessRow({ ms }: { ms: ManuscriptWitness }) {
   return (
     <div className="grid grid-cols-[auto_1fr_auto] gap-x-4 gap-y-0.5 py-2.5 border-b border-zinc-800/50 last:border-0 items-start">
-      <div className="font-mono text-amber-400 text-sm font-semibold pt-0.5 min-w-[3rem]">
+      <div className="font-mono text-gold-400 text-sm font-semibold pt-0.5 min-w-[3rem]">
         {ms.siglum}
       </div>
       <div>
@@ -46,7 +46,7 @@ function WitnessRow({ ms }: { ms: ManuscriptWitness }) {
         )}
         <div className="text-xs text-zinc-500 mt-0.5">{ms.repository}</div>
         {ms.significance && (
-          <div className="text-xs text-amber-500/70 mt-0.5 italic">{ms.significance}</div>
+          <div className="text-xs text-gold-500/70 mt-0.5 italic">{ms.significance}</div>
         )}
       </div>
       <div className="text-right">
@@ -59,7 +59,7 @@ function WitnessRow({ ms }: { ms: ManuscriptWitness }) {
             href={ms.institution_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-0.5 text-xs text-amber-600 hover:text-amber-500 mt-1"
+            className="inline-flex items-center gap-0.5 text-xs text-gold-500 hover:text-gold-400 mt-1"
           >
             View <ExternalLink size={9} />
           </a>
@@ -82,7 +82,7 @@ function TabSection({ items, tab }: { items: ManuscriptWitness[], tab: Tab }) {
       >
         <div className="flex items-center gap-3">
           <span className="font-semibold text-zinc-100">{TAB_LABELS[tab]}</span>
-          <span className="text-xs bg-amber-400/10 text-amber-400 px-2 py-0.5 rounded-full">
+          <span className="text-xs bg-gold-400/10 text-gold-400 px-2 py-0.5 rounded-full">
             {items.length} manuscripts
           </span>
         </div>
@@ -92,7 +92,7 @@ function TabSection({ items, tab }: { items: ManuscriptWitness[], tab: Tab }) {
         </div>
       </button>
       {expanded && (
-        <div className="px-4 divide-y divide-zinc-800/30">
+        <div className="px-4 bg-zinc-900 divide-y divide-zinc-800/30">
           {items.map(ms => <WitnessRow key={ms.id} ms={ms} />)}
         </div>
       )}
@@ -111,7 +111,7 @@ export function ManuscriptWitnessList({ witnesses, verseRef }: Props) {
           Manuscript Witnesses
         </h2>
         <p className="text-zinc-400 text-sm">
-          Every known manuscript tradition containing <span className="text-amber-400">{verseRef}</span> —
+          Every known manuscript tradition containing <span className="text-gold-400">{verseRef}</span> —
           <span className="text-zinc-300"> {total} named sources listed below</span>,
           plus thousands more in the Byzantine tradition.
         </p>

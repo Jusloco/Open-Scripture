@@ -78,6 +78,7 @@ export function VerseReader({ wordPairs, imagedManuscripts, fallbackManuscript }
             <img
               src={imageUrl}
               alt={msName}
+              referrerPolicy="no-referrer"
               className="max-h-56 w-full object-contain"
               onError={() => setImgFailed(true)}
             />
@@ -92,7 +93,7 @@ export function VerseReader({ wordPairs, imagedManuscripts, fallbackManuscript }
         {/* Manuscript info */}
         {ms && (
           <div className="mb-3">
-            <div className="font-semibold text-amber-400 text-sm">{msName}</div>
+            <div className="font-semibold text-gold-400 text-sm">{msName}</div>
             <div className="text-xs text-zinc-400 mt-0.5">{msDate}</div>
             <div className="text-xs text-zinc-500">{msLocation}</div>
             {msSignificance && (
@@ -105,7 +106,7 @@ export function VerseReader({ wordPairs, imagedManuscripts, fallbackManuscript }
                 href={institutionUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-amber-500 hover:text-amber-400 mt-2"
+                className="inline-flex items-center gap-1 text-xs text-gold-500 hover:text-gold-400 mt-2"
               >
                 View at institution <ExternalLink size={10} />
               </a>
@@ -150,7 +151,7 @@ export function VerseReader({ wordPairs, imagedManuscripts, fallbackManuscript }
                 onClick={() => setSelectedWord(i === selectedWord ? null : i)}
                 className={`text-xl font-serif px-2.5 py-1 rounded-lg transition-all border ${
                   selectedWord === i
-                    ? 'bg-amber-400 text-zinc-950 border-amber-400 shadow-lg shadow-amber-400/20'
+                    ? 'bg-gold-400 text-zinc-950 border-gold-400 shadow-lg shadow-gold-400/20'
                     : 'text-zinc-200 hover:bg-zinc-800 border-transparent hover:border-zinc-700'
                 }`}
               >
@@ -166,8 +167,8 @@ export function VerseReader({ wordPairs, imagedManuscripts, fallbackManuscript }
 
         {/* Translation card */}
         {word ? (
-          <div className="bg-zinc-900 border border-amber-400/30 rounded-xl p-4 mb-4 shadow-lg">
-            <div className="text-4xl font-serif text-amber-400 mb-1">{word.greek}</div>
+          <div className="bg-zinc-900 border border-gold-400/30 rounded-xl p-4 mb-4 shadow-lg">
+            <div className="text-4xl font-serif text-gold-400 mb-1">{word.greek}</div>
             <div className="text-xl text-white font-medium">{word.english}</div>
           </div>
         ) : (

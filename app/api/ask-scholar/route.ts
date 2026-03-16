@@ -13,7 +13,7 @@ export async function POST(req: Request) {
   }
 
   let question: string
-  let verseData: VerseData
+  let verseData: VerseData | undefined
 
   try {
     const body = await req.json()
@@ -33,7 +33,8 @@ export async function POST(req: Request) {
     })
   }
 
-  const systemPrompt = `You are a New Testament manuscript scholar and textual critic with deep expertise in Greek papyri, codices, and early Christian history. You help people understand the manuscript evidence behind Bible verses — accurately, accessibly, and without bias toward any denomination.
+  const systemPrompt = verseData
+    ? `You are a New Testament manuscript scholar and textual critic with deep expertise in Greek papyri, codices, and early Christian history. You help people understand the manuscript evidence behind Bible verses — accurately, accessibly, and without bias toward any denomination.
 
 You have access to the following verse data for ${verseData.reference}:
 
@@ -45,6 +46,9 @@ ${verseData.variants.length > 0 ? `Textual variants: ${JSON.stringify(verseData.
 ${verseData.plain_english_summary}
 
 Answer the user's question grounded in this data. Be honest about what scholars know vs. what is uncertain. Cite specific manuscripts (P66, P75, Sinaiticus, Vaticanus, etc.) where relevant. Keep your answer focused and readable — aim for 150-300 words unless more depth is clearly needed.`
+    : `You are a New Testament manuscript scholar and textual critic with deep expertise in Greek papyri, codices, and early Christian history. You help people understand the manuscript evidence behind Bible verses and the history of the New Testament text — accurately, accessibly, and without bias toward any denomination.
+
+Answer the user's question drawing on your knowledge of manuscript traditions, textual criticism, papyri, codices, Church Father citations, and early Christian history. Be honest about what scholars know vs. what is uncertain. Cite specific manuscripts (P52, P66, P75, Sinaiticus, Vaticanus, etc.) where relevant. Keep your answer focused and readable — aim for 150-300 words unless more depth is clearly needed.`
 
   const stream = client.messages.stream({
     model: 'claude-opus-4-6',

@@ -432,15 +432,47 @@ export default function AskScholar() {
     setInput('')
     setIsLoading(true)
 
-    // Fake delay for realism
-    await new Promise((r) => setTimeout(r, 320))
-
     const answer = getAnswer(trimmed)
-    const assistantMsg: Message = { id: crypto.randomUUID(), role: 'assistant', text: answer }
-    setMessages((prev) => [...prev, assistantMsg])
-    setIsLoading(false)
 
-    // Refocus input
+    if (answer !== FALLBACK_ANSWER) {
+      // Use rule-based answer directly
+      await new Promise((r) => setTimeout(r, 320))
+      const assistantMsg: Message = { id: crypto.randomUUID(), role: 'assistant', text: answer }
+      setMessages((prev) => [...prev, assistantMsg])
+    } else {
+      // Stream from AI API
+      const msgId = crypto.randomUUID()
+      setMessages((prev) => [...prev, { id: msgId, role: 'assistant', text: '' }])
+      try {
+        const res = await fetch('/api/ask-scholar', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question: trimmed }),
+        })
+        if (!res.ok || !res.body) throw new Error('API error')
+        const reader = res.body.getReader()
+        const decoder = new TextDecoder()
+        let full = ''
+        while (true) {
+          const { done, value } = await reader.read()
+          if (done) break
+          full += decoder.decode(value, { stream: true })
+          setMessages((prev) =>
+            prev.map((m) => (m.id === msgId ? { ...m, text: full } : m))
+          )
+        }
+      } catch {
+        setMessages((prev) =>
+          prev.map((m) =>
+            m.id === msgId
+              ? { ...m, text: 'Sorry, I could not reach the AI at this time. Please try again.' }
+              : m
+          )
+        )
+      }
+    }
+
+    setIsLoading(false)
     setTimeout(() => inputRef.current?.focus(), 50)
   }
 
@@ -498,7 +530,7 @@ export default function AskScholar() {
               <div className="max-w-[85%] bg-zinc-100 border border-zinc-200 rounded-2xl rounded-bl-sm px-4 py-3">
                 <RichText text={msg.text} />
                 <p className="text-xs text-zinc-400 mt-3 border-t border-zinc-200 pt-2">
-                  Rule-based response · Always verify with primary sources
+                  Always verify with primary sources
                 </p>
               </div>
             </div>
