@@ -1,0 +1,279 @@
+{
+  "book": "Luke",
+  "total_greek_manuscripts": 1650,
+  "total_latin_manuscripts": 8000,
+  "total_syriac_manuscripts": 350,
+  "total_all_languages": 25000,
+  "earliest_complete_manuscript": "Codex Sinaiticus (~360 AD)",
+  "chapters": [
+    { "number": 1, "verse_count": 80, "summary": "The annunciation to Zechariah; annunciation to Mary; Mary's visit to Elizabeth; birth of John the Baptist; the Magnificat; the Benedictus", "key_verses": [34, 35] },
+    { "number": 2, "verse_count": 52, "summary": "Birth of Jesus in Bethlehem; angels and shepherds; presentation in the Temple; Simeon and Anna; boy Jesus in the Temple", "key_verses": [14] },
+    { "number": 3, "verse_count": 38, "summary": "The ministry of John the Baptist; baptism of Jesus; genealogy of Jesus", "key_verses": [] },
+    { "number": 4, "verse_count": 44, "summary": "Temptation of Jesus; rejection at Nazareth; healing in Capernaum; exorcism and healings", "key_verses": [] },
+    { "number": 5, "verse_count": 39, "summary": "Miraculous catch of fish; healing of leper; healing of paralytic; calling of Levi; fasting question", "key_verses": [] },
+    { "number": 6, "verse_count": 49, "summary": "Sabbath controversies; choosing the Twelve; the Sermon on the Plain; love for enemies", "key_verses": [] },
+    { "number": 7, "verse_count": 50, "summary": "Centurion's servant healed; raising of widow's son at Nain; John the Baptist's question; the sinful woman anoints Jesus", "key_verses": [] },
+    { "number": 8, "verse_count": 56, "summary": "Women who supported Jesus; Parable of the Sower; stilling the storm; Gerasene demoniac; Jairus's daughter; woman with hemorrhage", "key_verses": [] },
+    { "number": 9, "verse_count": 62, "summary": "Sending of the Twelve; feeding 5,000; Peter's confession; first passion prediction; Transfiguration; healing possessed boy", "key_verses": [] },
+    { "number": 10, "verse_count": 42, "summary": "Sending of the seventy-two; Good Samaritan; Mary and Martha", "key_verses": [] },
+    { "number": 11, "verse_count": 54, "summary": "The Lord's Prayer; friend at midnight; the sign of Jonah; Woes on the Pharisees", "key_verses": [] },
+    { "number": 12, "verse_count": 59, "summary": "Warnings against hypocrisy and greed; the rich fool; not worrying; watching and faithfulness; division", "key_verses": [] },
+    { "number": 13, "verse_count": 35, "summary": "Call to repentance; healing the bent woman on the Sabbath; mustard seed and leaven; the narrow door", "key_verses": [] },
+    { "number": 14, "verse_count": 35, "summary": "Healing on the Sabbath; parable of the great banquet; cost of discipleship", "key_verses": [] },
+    { "number": 15, "verse_count": 32, "summary": "Parables of the lost sheep, lost coin, and prodigal son", "key_verses": [] },
+    { "number": 16, "verse_count": 31, "summary": "The shrewd manager; the rich man and Lazarus; teaching on divorce and money", "key_verses": [] },
+    { "number": 17, "verse_count": 37, "summary": "On forgiveness; faith like a mustard seed; ten lepers cleansed; the coming of the Kingdom", "key_verses": [] },
+    { "number": 18, "verse_count": 43, "summary": "Persistent widow; Pharisee and tax collector; blessing children; rich young ruler; blind Bartimaeus", "key_verses": [] },
+    { "number": 19, "verse_count": 48, "summary": "Zacchaeus; Parable of the Ten Minas; triumphal entry; cleansing of the Temple", "key_verses": [] },
+    { "number": 20, "verse_count": 47, "summary": "Question of authority; Parable of the tenants; question about taxes; question about resurrection", "key_verses": [] },
+    { "number": 21, "verse_count": 38, "summary": "Widow's offering; the Olivet Discourse; signs of the end; the coming of the Son of Man", "key_verses": [] },
+    { "number": 22, "verse_count": 71, "summary": "Plot against Jesus; preparation for the Passover; the Last Supper (disputed longer/shorter text); the Agony in Gethsemane (disputed); arrest", "manuscripts_note": "Luke 22:19b–20 (the longer text of the institution words) is absent from Codex Bezae and some Old Latin manuscripts. Luke 22:43–44 (the Bloody Sweat / angel strengthening Jesus) is absent from P75, Vaticanus, and several other early witnesses.", "key_verses": [19, 43, 44] },
+    { "number": 23, "verse_count": 56, "summary": "Trial before Pilate and Herod; Simon of Cyrene; the crucifixion; the criminal on the cross; death and burial", "manuscripts_note": "Luke 23:34a ('Father, forgive them, for they know not what they do') is absent from P75, Codex Vaticanus, Codex Bezae (D), and several other key witnesses.", "key_verses": [34] },
+    { "number": 24, "verse_count": 53, "summary": "The empty tomb; the road to Emmaus; appearances to the disciples; the Ascension", "manuscripts_note": "Luke 24:51 contains a variant: some manuscripts add 'and was carried up into heaven,' absent from Codex Sinaiticus and several Western manuscripts.", "key_verses": [51] }
+  ],
+  "key_verses": {
+    "1:34": {
+      "reference": "Luke 1:34–35",
+      "chapter": 1,
+      "verse": 34,
+      "text": "Then said Mary unto the angel, How shall this be, seeing I know not a man? And the angel answered and said unto her, The Holy Ghost shall come upon thee, and the power of the Highest shall overshadow thee: therefore also that holy thing which shall be born of thee shall be called the Son of God.",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 195,
+      "armenian_manuscripts": 145,
+      "greek_words": [
+        { "greek": "Εἶπεν δὲ Μαριὰμ", "english": "Then said Mary" },
+        { "greek": "πρὸς τὸν ἄγγελον", "english": "unto the angel" },
+        { "greek": "Πῶς ἔσται τοῦτο", "english": "How shall this be" },
+        { "greek": "ἐπεὶ ἄνδρα οὐ γινώσκω", "english": "seeing I know not a man" },
+        { "greek": "Πνεῦμα Ἅγιον ἐπελεύσεται ἐπὶ σέ", "english": "The Holy Ghost shall come upon thee" },
+        { "greek": "δύναμις Ὑψίστου ἐπισκιάσει σοι", "english": "the power of the Highest shall overshadow thee" },
+        { "greek": "τὸ γεννώμενον ἅγιον", "english": "that holy thing which shall be born" },
+        { "greek": "κληθήσεται υἱὸς θεοῦ", "english": "shall be called the Son of God" }
+      ],
+      "earliest_manuscript": {
+        "name": "P4 (Papyrus 4)",
+        "date": "~200 AD",
+        "location": "Bibliothèque nationale de France, Paris",
+        "description": "P4 is among the earliest surviving papyri of Luke, preserving portions of chapters 1–6. It is one of the oldest witnesses to the virginal conception account."
+      },
+      "earliest_church_father_citation": {
+        "author": "Justin Martyr",
+        "date": "~155 AD",
+        "work": "First Apology",
+        "quote": "And again, through Isaiah the prophet, the Holy Spirit signified what was to come... 'Behold a virgin shall conceive and bring forth a son.'"
+      },
+      "variants": [],
+      "plain_english_summary": "The virginal conception account in Luke 1:34–35 is textually secure across all manuscript traditions. No early manuscript omits or substantially alters these verses. The passage is attested in papyri as early as ~200 AD and cited by Church Fathers from the 2nd century onward. Whatever one's theological assessment, the manuscript evidence is uniform."
+    },
+    "2:14": {
+      "reference": "Luke 2:14",
+      "chapter": 2,
+      "verse": 14,
+      "text": "Glory to God in the highest, and on earth peace, good will toward men.",
+      "confidence": "yellow",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 195,
+      "armenian_manuscripts": 145,
+      "greek_words": [
+        { "greek": "Δόξα ἐν ὑψίστοις θεῷ", "english": "Glory to God in the highest" },
+        { "greek": "καὶ ἐπὶ γῆς εἰρήνη", "english": "and on earth peace" },
+        { "greek": "ἐν ἀνθρώποις εὐδοκία", "english": "good will toward men" }
+      ],
+      "earliest_manuscript": {
+        "name": "P75 (Papyrus Bodmer XIV–XV)",
+        "date": "~175–225 AD",
+        "location": "Vatican Library, Vatican City",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P75",
+        "description": "P75 is one of the two oldest and most important papyri of Luke. It reads 'eudokias' (genitive: 'of good will'), which changes the meaning significantly. P75 and Vaticanus agree against the later reading."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~240 AD",
+        "work": "Commentary on Luke",
+        "quote": "The angels sang 'peace among men of good will' — that is, those on whom God's favor rests."
+      },
+      "variants": [
+        {
+          "description": "The key variant is between 'eudokia' (nominative: 'good will' — as in KJV 'good will toward men') and 'eudokias' (genitive: 'of good will' — as in ESV/NIV 'peace among those with whom he is pleased' or 'men of his good pleasure'). These are nearly identical in spelling (εὐδοκία vs. εὐδοκίας) and differ by only a single final sigma — a very easy copying error in either direction.",
+          "manuscripts_supporting": "Genitive 'eudokias' (God's peace to people of his good will): P75, Codex Sinaiticus, Codex Vaticanus, Codex Bezae. Nominative 'eudokia' (good will toward men generally): Codex Alexandrinus, the majority of later Byzantine manuscripts, and Old Latin witnesses.",
+          "scholarly_consensus": "The NA28 and UBS5 critical editions adopt the genitive 'eudokias' as the original reading, followed by ESV, NIV, NASB, and NET. The nominative 'eudokia' (KJV) reflects the later Byzantine tradition. The genitive shifts the meaning from 'peace and goodwill for all humanity' to 'peace for those whom God has specifically chosen' — a subtly different theological nuance.",
+          "doctrinal_impact": "No major doctrine is at stake. Both readings affirm God's peace and goodwill in the Incarnation. The variant affects tone: the genitive reading emphasizes divine sovereignty (peace for those whom God favors), while the nominative reading has a more universally inclusive ring. Modern translations consistently follow the older manuscripts."
+        }
+      ],
+      "plain_english_summary": "The angelic song 'Glory to God in the highest' at the Nativity has a small but interesting variant. The KJV reads 'good will toward men' (nominative), but the oldest manuscripts — P75, Sinaiticus, and Vaticanus — read 'men of good will' or 'those on whom his favor rests' (genitive). The difference is a single letter at the end of one word. Modern translations follow the older reading. No doctrine hinges on this difference."
+    },
+    "22:19": {
+      "reference": "Luke 22:19b–20",
+      "chapter": 22,
+      "verse": 19,
+      "text": "...which is given for you: this do in remembrance of me. Likewise also the cup after supper, saying, This cup is the new testament in my blood, which is shed for you.",
+      "confidence": "yellow",
+      "greek_manuscripts": 1600,
+      "latin_manuscripts": 7200,
+      "syriac_manuscripts": 320,
+      "coptic_manuscripts": 170,
+      "armenian_manuscripts": 135,
+      "greek_words": [
+        { "greek": "τὸ ὑπὲρ ὑμῶν διδόμενον", "english": "which is given for you" },
+        { "greek": "τοῦτο ποιεῖτε εἰς τὴν ἐμὴν ἀνάμνησιν", "english": "this do in remembrance of me" },
+        { "greek": "ὡσαύτως καὶ τὸ ποτήριον", "english": "likewise also the cup" },
+        { "greek": "μετὰ τὸ δειπνῆσαι", "english": "after supper" },
+        { "greek": "τοῦτο τὸ ποτήριον", "english": "this cup" },
+        { "greek": "ἡ καινὴ διαθήκη ἐν τῷ αἵματί μου", "english": "the new testament in my blood" },
+        { "greek": "τὸ ὑπὲρ ὑμῶν ἐκχυννόμενον", "english": "which is shed for you" }
+      ],
+      "earliest_manuscript": {
+        "name": "P75 (Papyrus Bodmer XIV–XV)",
+        "date": "~175–225 AD",
+        "location": "Vatican Library, Vatican City",
+        "description": "P75 supports the longer text of the Last Supper account, as does Codex Vaticanus. The shorter text is found primarily in Codex Bezae (D) and some Old Latin manuscripts."
+      },
+      "earliest_church_father_citation": {
+        "author": "Justin Martyr",
+        "date": "~155 AD",
+        "work": "First Apology",
+        "quote": "Jesus took bread, and when He had given thanks, He said, 'Do this in remembrance of Me, this is My body'; and...He took the cup and gave thanks, and said, 'This is My blood.'"
+      },
+      "variants": [
+        {
+          "description": "Luke 22:19b–20 constitutes the 'longer text' of Luke's Last Supper account. The 'shorter text' found in Codex Bezae (D) and some Old Latin manuscripts omits everything after 'this is my body' (v. 19a) — removing the 'remembrance' command and the entire cup saying. The longer text is found in P75, Vaticanus, Sinaiticus, and the great majority of manuscripts.",
+          "manuscripts_supporting": "Longer text (includes vv. 19b–20): P75, Codex Sinaiticus, Codex Vaticanus, and the vast majority of Greek manuscripts. Shorter text (omits 19b–20): Codex Bezae (D), some Old Latin manuscripts (a, b, e, ff2), and the Sinaitic Syriac.",
+          "scholarly_consensus": "Most modern scholars favor the longer text as original, viewing the shorter text as an accidental omission (possibly a scribe's eye skipping from one 'body' reference to another) or a deliberate abbreviation. The NA28 and UBS5 adopt the longer text. A minority view, associated with textual scholars like Westcott and Hort in the 19th century, preferred the shorter Western text, but this position has largely been abandoned.",
+          "doctrinal_impact": "The shorter text would omit the most explicit Lukan institution narrative for the Lord's Supper, including the 'new covenant' language and the 'in remembrance of me' command. The longer text aligns closely with 1 Corinthians 11:23–25 (Paul's earlier account). No uniquely Christian doctrine would be lost even if the shorter text were original, since the institution is firmly attested in Matthew, Mark, and 1 Corinthians."
+        }
+      ],
+      "plain_english_summary": "Luke's account of the Last Supper has a well-known textual question. A small group of manuscripts — led by the Western text (Codex Bezae) — have a shorter version that omits most of verses 19b–20. The vast majority of manuscripts, including the oldest papyri and great codices, have the longer version. Most scholars today accept the longer text as original. Even if the shorter text were adopted, the institution of the Lord's Supper is securely attested in Matthew, Mark, and Paul's first letter to the Corinthians."
+    },
+    "22:43": {
+      "reference": "Luke 22:43–44",
+      "chapter": 22,
+      "verse": 43,
+      "text": "And there appeared an angel unto him from heaven, strengthening him. And being in an agony he prayed more earnestly: and his sweat was as it were great drops of blood falling down to the ground.",
+      "confidence": "red",
+      "greek_manuscripts": 1400,
+      "latin_manuscripts": 7000,
+      "syriac_manuscripts": 290,
+      "coptic_manuscripts": 160,
+      "armenian_manuscripts": 120,
+      "greek_words": [
+        { "greek": "ὤφθη δὲ αὐτῷ ἄγγελος ἀπ' οὐρανοῦ", "english": "And there appeared an angel unto him from heaven" },
+        { "greek": "ἐνισχύων αὐτόν", "english": "strengthening him" },
+        { "greek": "καὶ γενόμενος ἐν ἀγωνίᾳ", "english": "And being in an agony" },
+        { "greek": "ἐκτενέστερον προσηύχετο", "english": "he prayed more earnestly" },
+        { "greek": "καὶ ἐγένετο ὁ ἱδρὼς αὐτοῦ", "english": "and his sweat was" },
+        { "greek": "ὡσεὶ θρόμβοι αἵματος", "english": "as it were great drops of blood" },
+        { "greek": "καταβαίνοντες ἐπὶ τὴν γῆν", "english": "falling down to the ground" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Alexandrinus (A)",
+        "date": "~400–440 AD",
+        "location": "British Library, London",
+        "description": "The Bloody Sweat passage is absent from P75, Codex Vaticanus, and Codex Sinaiticus. It appears in Codex Alexandrinus, Codex Bezae, and the majority of later manuscripts. Justin Martyr (~155 AD) appears to allude to an angel appearing to Jesus, suggesting the passage may be authentic and very early."
+      },
+      "earliest_church_father_citation": {
+        "author": "Justin Martyr",
+        "date": "~155 AD",
+        "work": "Dialogue with Trypho",
+        "quote": "For when Christ was going up from the river Jordan, having been baptized...a fire was kindled in the Jordan...and the apostles of this very Christ of ours have written that...an angel appeared and strengthened him."
+      },
+      "variants": [
+        {
+          "description": "Luke 22:43–44, the account of the angel strengthening Jesus and his sweat falling like drops of blood, is absent from some of the most important early manuscripts, including P75 and Codex Vaticanus. Other witnesses, including Codex Alexandrinus and the majority of manuscripts, include it. Some manuscripts have it but with asterisks or obeli (ancient marks indicating scribal doubt). Justin Martyr appears to allude to the angel in the 2nd century, which may indicate the passage is original. Some scholars suggest it was removed by scribes who found the portrayal of Jesus in anguish theologically uncomfortable (a motivation called 'theological correction').",
+          "manuscripts_supporting": "Absent: P75, Codex Vaticanus (B), Codex Sinaiticus (א), several Old Latin manuscripts, Clement of Alexandria. Present: Codex Alexandrinus (A), Codex Bezae (D), and the majority of later Greek manuscripts. Asterisked/obelized (marked as doubtful): some later manuscripts including family 13.",
+          "scholarly_consensus": "Divided. The NA28 brackets the passage, indicating genuine doubt. Some scholars (Metzger, Fitzmyer) view it as a non-Lukan addition — perhaps from an early oral or written tradition about Jesus' passion. Others (Ehrman, Plunkett) suggest it was removed for theological reasons. The vocabulary is consistent with Lukan style, which some take as evidence of authenticity. No consensus exists.",
+          "doctrinal_impact": "The passage is the primary New Testament text for the medical condition hematidrosis (sweating blood under extreme stress) and has been used to support Jesus' genuine human suffering. It also contains the only NT reference to an angel strengthening Jesus in Gethsemane. Its theological significance lies in its witness to the humanity and the genuine agony of Jesus. If removed, these details are not found elsewhere in the Gospels, though the Gethsemane prayer itself remains."
+        }
+      ],
+      "bracketed": true,
+      "bracket_note": "Luke 22:43–44 is absent from P75, Codex Vaticanus, and Codex Sinaiticus. The NA28 brackets these verses as of uncertain origin. Modern Bibles typically include the passage with a note about its disputed status.",
+      "plain_english_summary": "The Agony in Gethsemane account in Luke — the angel, the sweating of blood — is one of the most debated textual questions in Luke's Gospel. It is missing from the two oldest high-quality manuscripts of Luke (P75 and Vaticanus), and also from Sinaiticus. It appears to have been known to Justin Martyr around 155 AD, however, suggesting it may be early. The scholarly community is genuinely divided, which is why the NA28 brackets it rather than omitting it outright. This is an honest, unresolved textual question."
+    },
+    "23:34": {
+      "reference": "Luke 23:34",
+      "chapter": 23,
+      "verse": 34,
+      "text": "Then said Jesus, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots.",
+      "confidence": "red",
+      "greek_manuscripts": 1450,
+      "latin_manuscripts": 6800,
+      "syriac_manuscripts": 280,
+      "coptic_manuscripts": 155,
+      "armenian_manuscripts": 115,
+      "greek_words": [
+        { "greek": "ὁ δὲ Ἰησοῦς ἔλεγεν", "english": "Then said Jesus" },
+        { "greek": "Πάτερ ἄφες αὐτοῖς", "english": "Father, forgive them" },
+        { "greek": "οὐ γὰρ οἴδασιν τί ποιοῦσιν", "english": "for they know not what they do" },
+        { "greek": "διαμεριζόμενοι δὲ τὰ ἱμάτια αὐτοῦ", "english": "And they parted his raiment" },
+        { "greek": "ἔβαλον κλῆρον", "english": "and cast lots" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Sinaiticus (א)",
+        "date": "~360 AD",
+        "location": "British Library, London",
+        "image_url": "https://codexsinaiticus.org",
+        "description": "Codex Sinaiticus includes the prayer, but Codex Vaticanus omits it. P75 also omits it. The prayer is present in Codex Alexandrinus and the majority of later manuscripts."
+      },
+      "earliest_church_father_citation": {
+        "author": "Irenaeus of Lyon",
+        "date": "~180 AD",
+        "work": "Against Heresies",
+        "quote": "The Lord...said upon the cross, 'Father, forgive them, for they know not what they do.'"
+      },
+      "variants": [
+        {
+          "description": "Luke 23:34a — 'Father, forgive them, for they know not what they do' — is absent from some of the most important early manuscripts, including P75 and Codex Vaticanus. It is present in Codex Sinaiticus, Codex Alexandrinus, and the majority of manuscripts. Some scholars have suggested it was removed by scribes who, writing after the destruction of Jerusalem in 70 AD, interpreted that event as God's judgment on Israel and thus considered a prayer of forgiveness for Jesus' killers to be theologically awkward or historically falsified.",
+          "manuscripts_supporting": "Absent: P75, Codex Vaticanus (B), Codex Bezae (D), the Sinaitic Syriac, some Old Latin manuscripts. Present: Codex Sinaiticus (א), Codex Alexandrinus (A), the majority of later Byzantine manuscripts, Latin Vulgate, Justin Martyr, Irenaeus.",
+          "scholarly_consensus": "The NA28 brackets the prayer but does not omit it. The UBS5 gives it a 'C' rating, indicating substantial doubt. Scholars such as Bart Ehrman argue the prayer was added; others argue the unusual strength of the absent witnesses (P75 and Vaticanus in particular) makes its originality doubtful. Bruce Metzger's Textual Commentary notes the verse has the character of an authentic tradition even if its placement may be disputed. The Church Fathers' early attestation (Irenaeus, ~180 AD) suggests it was circulating very early.",
+          "doctrinal_impact": "This verse is one of the most beloved in all of Christian literature — Jesus praying for the forgiveness of those crucifying him. The concept of forgiveness in the face of persecution is abundantly attested in the New Testament (Stephen's prayer in Acts 7:60 echoes it). Its absence would not eliminate the doctrine, but its presence — if original — represents one of the most stunning recorded moments in the Gospels."
+        }
+      ],
+      "bracketed": true,
+      "bracket_note": "Luke 23:34a ('Father, forgive them, for they know not what they do') is absent from P75 and Codex Vaticanus. The NA28 brackets it. Modern Bibles typically include it with a footnote.",
+      "plain_english_summary": "The prayer of Jesus from the cross — 'Father, forgive them, for they know not what they do' — is absent from some of the best early manuscripts, including P75 and Vaticanus. It is present in Sinaiticus and most other manuscripts, and was cited by Irenaeus around 180 AD. Scholars are genuinely divided. The prayer may be authentic tradition included by Luke, or it may be an early addition that was inserted because of its ring of authenticity. The NA28 acknowledges the uncertainty by bracketing it. This is an honest case where the evidence is ambiguous."
+    },
+    "24:51": {
+      "reference": "Luke 24:51",
+      "chapter": 24,
+      "verse": 51,
+      "text": "And it came to pass, while he blessed them, he was parted from them, and carried up into heaven.",
+      "confidence": "yellow",
+      "greek_manuscripts": 1640,
+      "latin_manuscripts": 7800,
+      "syriac_manuscripts": 340,
+      "coptic_manuscripts": 185,
+      "armenian_manuscripts": 140,
+      "greek_words": [
+        { "greek": "καὶ ἐγένετο", "english": "And it came to pass" },
+        { "greek": "ἐν τῷ εὐλογεῖν αὐτὸν αὐτούς", "english": "while he blessed them" },
+        { "greek": "διέστη ἀπ' αὐτῶν", "english": "he was parted from them" },
+        { "greek": "καὶ ἀνεφέρετο εἰς τὸν οὐρανόν", "english": "and was carried up into heaven" }
+      ],
+      "earliest_manuscript": {
+        "name": "P75 (Papyrus Bodmer XIV–XV)",
+        "date": "~175–225 AD",
+        "location": "Vatican Library, Vatican City",
+        "description": "P75 includes 'and was carried up into heaven,' supporting the longer text of Luke 24:51. Codex Sinaiticus omits this phrase in its original hand, though a later corrector added it."
+      },
+      "earliest_church_father_citation": {
+        "author": "Tertullian",
+        "date": "~200 AD",
+        "work": "On the Flesh of Christ",
+        "quote": "He was taken up into heaven."
+      },
+      "variants": [
+        {
+          "description": "The phrase 'and was carried up into heaven' (καὶ ἀνεφέρετο εἰς τὸν οὐρανόν) is present in the majority of manuscripts, including P75 and Codex Vaticanus, but absent from Codex Sinaiticus (original hand) and some early Western manuscripts. Codex Sinaiticus was later corrected by a scribe who added the phrase. This variant determines whether Luke's Gospel explicitly describes the Ascension of Jesus.",
+          "manuscripts_supporting": "Includes 'carried up into heaven': P75, Codex Vaticanus (B), Codex Alexandrinus (A), Codex Bezae (later addition). Omits the phrase: Codex Sinaiticus original hand (א*), some Old Latin manuscripts, Marcion's text.",
+          "scholarly_consensus": "The NA28 and UBS5 include the phrase as original, supported by P75 and Vaticanus. Most scholars consider the shorter text to be a deliberate omission — perhaps by scribes who wished to reserve the Ascension account for Acts 1:9–11 (also written by Luke), avoiding what they perceived as a contradiction or duplication. The longer text is well-supported and is followed by modern translations.",
+          "doctrinal_impact": "This verse, if the longer text is adopted, is the only explicit description of the Ascension in Luke's Gospel (as opposed to Acts 1). The Ascension is a core Christian doctrine, but it is attested multiple times in the New Testament even without this phrase. No doctrinal crisis arises from either reading."
+        }
+      ],
+      "plain_english_summary": "Luke 24:51 contains a small but interesting variant: does it say Jesus was 'carried up into heaven'? The oldest and best manuscripts (P75, Vaticanus) include this phrase, while Codex Sinaiticus originally omitted it (a later scribe added it back). Most scholars accept the longer reading as original. The variation may reflect early scribal hesitancy to describe the Ascension in Luke when Acts 1 (also by Luke) already narrates it. Modern Bibles follow the longer text, and the Ascension itself is among the best-attested events in early Christian literature."
+    }
+  }
+}

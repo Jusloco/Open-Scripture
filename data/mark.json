@@ -1,0 +1,291 @@
+{
+  "book": "Mark",
+  "total_greek_manuscripts": 1650,
+  "total_latin_manuscripts": 8000,
+  "total_syriac_manuscripts": 350,
+  "total_all_languages": 25000,
+  "earliest_complete_manuscript": "Codex Sinaiticus (~360 AD)",
+  "chapters": [
+    { "number": 1, "verse_count": 45, "summary": "The beginning of the Gospel; John the Baptist; baptism and temptation of Jesus; calling of disciples; healing in Capernaum", "manuscripts_note": "P45 (~250 AD) is the earliest papyrus covering portions of Mark. Mark 1:1 has a notable variant regarding 'Son of God'.", "key_verses": [1, 11] },
+    { "number": 2, "verse_count": 28, "summary": "Healing of the paralytic; calling of Levi; fasting question; Lord of the Sabbath", "key_verses": [] },
+    { "number": 3, "verse_count": 35, "summary": "Healing on the Sabbath; appointment of the Twelve; the Beelzebul controversy; Jesus' true family", "key_verses": [] },
+    { "number": 4, "verse_count": 41, "summary": "Parable of the Sower; lamp under a basket; mustard seed; stilling of the storm", "key_verses": [] },
+    { "number": 5, "verse_count": 43, "summary": "Gerasene demoniac; healing of Jairus's daughter and the woman with the hemorrhage", "key_verses": [] },
+    { "number": 6, "verse_count": 56, "summary": "Rejection at Nazareth; sending of the Twelve; death of John the Baptist; feeding 5,000; walking on water", "key_verses": [] },
+    { "number": 7, "verse_count": 37, "summary": "Tradition of the elders; Syrophoenician woman; healing of deaf man", "key_verses": [] },
+    { "number": 8, "verse_count": 38, "summary": "Feeding 4,000; leaven of the Pharisees; healing of blind man at Bethsaida; Peter's confession; first passion prediction", "key_verses": [] },
+    { "number": 9, "verse_count": 50, "summary": "The Transfiguration; healing of the boy with an unclean spirit; second passion prediction; true greatness", "key_verses": [] },
+    { "number": 10, "verse_count": 52, "summary": "Teaching on divorce; blessing children; rich young man; third passion prediction; request of James and John; blind Bartimaeus", "key_verses": [45] },
+    { "number": 11, "verse_count": 33, "summary": "Triumphal entry; cursing of the fig tree; cleansing of the Temple; question of authority", "key_verses": [] },
+    { "number": 12, "verse_count": 44, "summary": "Parable of the tenants; question about taxes; question about resurrection; the greatest commandment; widow's offering", "key_verses": [28, 29, 30, 31] },
+    { "number": 13, "verse_count": 37, "summary": "The Olivet Discourse; signs of the end; the coming of the Son of Man; the unknown day and hour", "key_verses": [] },
+    { "number": 14, "verse_count": 72, "summary": "Plot to kill Jesus; anointing at Bethany; Last Supper; Gethsemane; arrest; Peter's denial; trial before the Sanhedrin", "key_verses": [] },
+    { "number": 15, "verse_count": 47, "summary": "Trial before Pilate; crucifixion; death and burial of Jesus", "key_verses": [34, 39] },
+    { "number": 16, "verse_count": 20, "summary": "The empty tomb; appearances of the risen Jesus (Long Ending disputed)", "manuscripts_note": "Mark 16:9–20 (the Long Ending) is absent from Codex Sinaiticus and Codex Vaticanus — the two oldest complete manuscripts. This is the most significant textual issue in the Gospel of Mark.", "key_verses": [8, 9] }
+  ],
+  "key_verses": {
+    "1:1": {
+      "reference": "Mark 1:1",
+      "chapter": 1,
+      "verse": 1,
+      "text": "The beginning of the gospel of Jesus Christ, the Son of God.",
+      "confidence": "yellow",
+      "greek_manuscripts": 1600,
+      "latin_manuscripts": 7800,
+      "syriac_manuscripts": 340,
+      "coptic_manuscripts": 180,
+      "armenian_manuscripts": 140,
+      "greek_words": [
+        { "greek": "Ἀρχὴ", "english": "The beginning" },
+        { "greek": "τοῦ εὐαγγελίου", "english": "of the gospel" },
+        { "greek": "Ἰησοῦ Χριστοῦ", "english": "of Jesus Christ" },
+        { "greek": "υἱοῦ θεοῦ", "english": "Son of God" }
+      ],
+      "earliest_manuscript": {
+        "name": "P45 (Chester Beatty Papyrus I)",
+        "date": "~250 AD",
+        "location": "Chester Beatty Library, Dublin, Ireland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P45",
+        "description": "P45 is one of the earliest surviving papyri of the Gospels, covering portions of Mark among other Gospels. It dates to approximately 250 AD."
+      },
+      "earliest_church_father_citation": {
+        "author": "Irenaeus of Lyon",
+        "date": "~180 AD",
+        "work": "Against Heresies",
+        "quote": "Matthew published a written gospel among the Hebrews...Mark, the disciple and interpreter of Peter, also transmitted to us in writing what Peter had preached."
+      },
+      "variants": [
+        {
+          "description": "The phrase 'Son of God' (υἱοῦ θεοῦ) is present in the majority of manuscripts but absent from a few important witnesses, including Codex Sinaiticus (original hand) and some early versions. Some scholars suggest it may have been omitted accidentally due to a scribal error, while others believe it was added later.",
+          "manuscripts_supporting": "Absent: Codex Sinaiticus (original hand, א*), some Old Latin manuscripts, Origen's commentary. Present: P45, Codex Vaticanus, Codex Alexandrinus, and the vast majority of Greek manuscripts.",
+          "scholarly_consensus": "The NA28 and UBS5 critical editions include 'Son of God' but note the variant. Most scholars retain it as original, viewing the omission as an accidental scribal error. The phrase is in the overwhelming majority of manuscripts including the earliest papyri.",
+          "doctrinal_impact": "No Christian doctrine is endangered either way. Mark 1:11 (the voice from heaven at baptism) and numerous other passages clearly identify Jesus as the Son of God. This variant affects the opening title only."
+        }
+      ],
+      "plain_english_summary": "Mark 1:1 opens with 'The beginning of the gospel of Jesus Christ, Son of God.' Most manuscripts include 'Son of God,' though a small number of early witnesses omit it — possibly due to a scribal copying error. The phrase is most likely original. Either way, the Gospel of Mark repeatedly identifies Jesus as the Son of God throughout the text, so no doctrine turns on this particular phrase in the title."
+    },
+    "10:45": {
+      "reference": "Mark 10:45",
+      "chapter": 10,
+      "verse": 45,
+      "text": "For even the Son of man came not to be ministered unto, but to minister, and to give his life a ransom for many.",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 195,
+      "armenian_manuscripts": 145,
+      "greek_words": [
+        { "greek": "καὶ γὰρ", "english": "For even" },
+        { "greek": "ὁ υἱὸς τοῦ ἀνθρώπου", "english": "the Son of man" },
+        { "greek": "οὐκ ἦλθεν", "english": "came not" },
+        { "greek": "διακονηθῆναι", "english": "to be ministered unto" },
+        { "greek": "ἀλλὰ διακονῆσαι", "english": "but to minister" },
+        { "greek": "καὶ δοῦναι", "english": "and to give" },
+        { "greek": "τὴν ψυχὴν αὐτοῦ", "english": "his life" },
+        { "greek": "λύτρον ἀντὶ πολλῶν", "english": "a ransom for many" }
+      ],
+      "earliest_manuscript": {
+        "name": "P45 (Chester Beatty Papyrus I)",
+        "date": "~250 AD",
+        "location": "Chester Beatty Library, Dublin, Ireland",
+        "description": "P45 preserves portions of Mark including chapters near this passage. Codex Vaticanus and Sinaiticus both attest this verse without variation."
+      },
+      "earliest_church_father_citation": {
+        "author": "Irenaeus of Lyon",
+        "date": "~180 AD",
+        "work": "Against Heresies",
+        "quote": "The Lord...gave himself as a ransom for those who had been led into captivity."
+      },
+      "variants": [],
+      "plain_english_summary": "Mark 10:45 — the 'ransom' saying — is one of the most theologically important verses in the Synoptic Gospels. It is uniformly attested across all manuscript traditions without any meaningful variant. Every Greek manuscript, every Latin manuscript, every ancient translation agrees. This is among the most textually secure statements of atonement theology in the New Testament."
+    },
+    "12:28": {
+      "reference": "Mark 12:28",
+      "chapter": 12,
+      "verse": 28,
+      "text": "And one of the scribes came, and having heard them reasoning together, and perceiving that he had answered them well, asked him, Which is the first commandment of all?",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 195,
+      "armenian_manuscripts": 145,
+      "greek_words": [
+        { "greek": "Καὶ προσελθὼν", "english": "And having come near" },
+        { "greek": "εἷς τῶν γραμματέων", "english": "one of the scribes" },
+        { "greek": "ἀκούσας αὐτῶν συζητούντων", "english": "having heard them reasoning together" },
+        { "greek": "ἰδὼν ὅτι καλῶς", "english": "perceiving that well" },
+        { "greek": "ἀπεκρίθη αὐτοῖς", "english": "he answered them" },
+        { "greek": "ἐπηρώτησεν αὐτόν", "english": "asked him" },
+        { "greek": "Ποία ἐστὶν ἐντολὴ πρώτη πάντων", "english": "Which is the first commandment of all" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Vaticanus (B)",
+        "date": "~325 AD",
+        "location": "Vatican Library, Vatican City",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_03",
+        "description": "Codex Vaticanus clearly attests the Greatest Commandment passage without variants."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on Matthew"
+      },
+      "variants": [],
+      "plain_english_summary": "The Greatest Commandment passage in Mark 12:28–31 is uniformly attested across all manuscript traditions. There are no meaningful textual variants. The Shema (Deuteronomy 6:4–5) citation in Jesus' answer is identical across all manuscripts."
+    },
+    "15:34": {
+      "reference": "Mark 15:34",
+      "chapter": 15,
+      "verse": 34,
+      "text": "And at the ninth hour Jesus cried with a loud voice, saying, Eloi, Eloi, lama sabachthani? which is, being interpreted, My God, my God, why hast thou forsaken me?",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 195,
+      "armenian_manuscripts": 145,
+      "greek_words": [
+        { "greek": "καὶ τῇ ἐνάτῃ ὥρᾳ", "english": "And at the ninth hour" },
+        { "greek": "ἐβόησεν ὁ Ἰησοῦς", "english": "Jesus cried" },
+        { "greek": "φωνῇ μεγάλῃ", "english": "with a loud voice" },
+        { "greek": "Ἐλωί Ἐλωί", "english": "Eloi, Eloi" },
+        { "greek": "λεμὰ σαβαχθάνι", "english": "lama sabachthani" },
+        { "greek": "Ὁ θεός μου ὁ θεός μου", "english": "My God, my God" },
+        { "greek": "εἰς τί ἐγκατέλιπές με", "english": "why hast thou forsaken me" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Vaticanus (B)",
+        "date": "~325 AD",
+        "location": "Vatican Library, Vatican City",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_03",
+        "description": "Codex Vaticanus attests the cry of dereliction in the exact same Aramaic form as all other manuscripts. There is no variation in this verse."
+      },
+      "earliest_church_father_citation": {
+        "author": "Justin Martyr",
+        "date": "~155 AD",
+        "work": "Dialogue with Trypho",
+        "quote": "My God, my God, why hast thou forsaken me? — David spoke these words prophetically from the person of Christ."
+      },
+      "variants": [],
+      "plain_english_summary": "The cry of dereliction — 'My God, my God, why have you forsaken me?' — is among the most textually uniform verses in the Passion narrative. Every manuscript in every language preserves it identically. The Aramaic phrase 'Eloi, Eloi, lama sabachthani' is transliterated consistently across all traditions. This verse, theologically profound and historically striking, stands on absolutely solid manuscript ground."
+    },
+    "15:39": {
+      "reference": "Mark 15:39",
+      "chapter": 15,
+      "verse": 39,
+      "text": "And when the centurion, which stood over against him, saw that he so cried out, and gave up the ghost, he said, Truly this man was the Son of God.",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 195,
+      "armenian_manuscripts": 145,
+      "greek_words": [
+        { "greek": "Ἰδὼν δὲ ὁ κεντυρίων", "english": "And when the centurion saw" },
+        { "greek": "ὁ παρεστηκὼς ἐξ ἐναντίας αὐτοῦ", "english": "who stood over against him" },
+        { "greek": "ὅτι οὕτως κράξας", "english": "that he so cried out" },
+        { "greek": "ἐξέπνευσεν", "english": "gave up the ghost" },
+        { "greek": "εἶπεν", "english": "said" },
+        { "greek": "Ἀληθῶς", "english": "Truly" },
+        { "greek": "οὗτος ὁ ἄνθρωπος", "english": "this man" },
+        { "greek": "υἱὸς θεοῦ ἦν", "english": "was the Son of God" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Sinaiticus (א)",
+        "date": "~360 AD",
+        "location": "British Library, London",
+        "image_url": "https://codexsinaiticus.org",
+        "description": "The centurion's confession is uniformly attested. This is the climactic Christological declaration of the Gospel of Mark."
+      },
+      "earliest_church_father_citation": {
+        "author": "Tertullian",
+        "date": "~200 AD",
+        "work": "Apology",
+        "quote": "The very centurion who had presided at the execution proclaimed him the Son of God."
+      },
+      "variants": [],
+      "plain_english_summary": "The Roman centurion's confession — 'Truly this man was the Son of God' — forms the climax of Mark's Gospel. It is textually secure across all manuscript traditions. The verse is often discussed theologically (was the centurion confessing faith or simply recognizing divine power?) but there is no manuscript controversy whatsoever."
+    },
+    "16:8": {
+      "reference": "Mark 16:8",
+      "chapter": 16,
+      "verse": 8,
+      "text": "And they went out quickly, and fled from the sepulchre; for they trembled and were amazed: neither said they any thing to any man; for they were afraid.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        { "greek": "καὶ ἐξελθοῦσαι", "english": "And going out" },
+        { "greek": "ἔφυγον ἀπὸ τοῦ μνημείου", "english": "they fled from the sepulchre" },
+        { "greek": "εἶχεν γὰρ αὐτὰς τρόμος", "english": "for trembling seized them" },
+        { "greek": "καὶ ἔκστασις", "english": "and amazement" },
+        { "greek": "καὶ οὐδενὶ οὐδὲν εἶπαν", "english": "and they said nothing to anyone" },
+        { "greek": "ἐφοβοῦντο γάρ", "english": "for they were afraid" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Sinaiticus (א)",
+        "date": "~360 AD",
+        "location": "British Library, London",
+        "image_url": "https://codexsinaiticus.org",
+        "description": "Both Codex Sinaiticus and Codex Vaticanus — the two oldest complete New Testament manuscripts — end the Gospel of Mark at 16:8. This is almost certainly where the original Gospel ended."
+      },
+      "earliest_church_father_citation": {
+        "author": "Eusebius of Caesarea",
+        "date": "~320 AD",
+        "work": "Questions to Marinus",
+        "quote": "Accurate copies of Mark's Gospel end at the words 'for they were afraid,' and that in them all that follows is not found."
+      },
+      "variants": [],
+      "plain_english_summary": "Mark 16:8 ends the Gospel with the women fleeing in fear and silence — a famously abrupt conclusion. The two oldest complete manuscripts (Sinaiticus and Vaticanus) both end here, and the early church historian Eusebius explicitly stated that 'accurate copies' end at this verse. This ending is textually secure. The question is theological and literary: did Mark intend to end here, or was the original ending lost? Most scholars today believe this was Mark's deliberate ending."
+    },
+    "16:9": {
+      "reference": "Mark 16:9–20",
+      "chapter": 16,
+      "verse": 9,
+      "text": "Now when Jesus was risen early the first day of the week, he appeared first to Mary Magdalene, out of whom he had cast seven devils...[continues through verse 20]",
+      "confidence": "red",
+      "greek_manuscripts": 1600,
+      "latin_manuscripts": 7500,
+      "syriac_manuscripts": 300,
+      "coptic_manuscripts": 150,
+      "armenian_manuscripts": 130,
+      "greek_words": [
+        { "greek": "Ἀναστὰς δὲ", "english": "Now having risen" },
+        { "greek": "πρωῒ", "english": "early" },
+        { "greek": "πρώτῃ σαββάτου", "english": "first day of the week" },
+        { "greek": "ἐφάνη πρῶτον", "english": "he appeared first" },
+        { "greek": "Μαρίᾳ τῇ Μαγδαληνῇ", "english": "to Mary Magdalene" },
+        { "greek": "ἀφ' ἧς ἐκβεβλήκει ἑπτὰ δαιμόνια", "english": "out of whom he had cast seven devils" }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Alexandrinus (A)",
+        "date": "~400–440 AD",
+        "location": "British Library, London",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_02",
+        "description": "Codex Alexandrinus includes the Long Ending (16:9–20) but it is absent from Sinaiticus and Vaticanus, the two earlier major codices. The Freer Gospels (Codex W) preserves the Long Ending with an additional interpolation known as the 'Freer Logion' after verse 14."
+      },
+      "earliest_church_father_citation": {
+        "author": "Irenaeus of Lyon",
+        "date": "~180 AD",
+        "work": "Against Heresies",
+        "quote": "Also, towards the conclusion of his Gospel, Mark says: 'So then, after the Lord Jesus had spoken to them, He was received up into heaven, and sitteth on the right hand of God' — citing Mark 16:19"
+      },
+      "variants": [
+        {
+          "description": "Mark 16:9–20, known as the Long Ending, is absent from the two oldest complete manuscripts of the New Testament: Codex Sinaiticus and Codex Vaticanus. The early church historians Eusebius and Jerome both noted that 'accurate copies' ended at 16:8. A shorter 'Intermediate Ending' also exists in some manuscripts between 16:8 and the Long Ending. The vocabulary and style of 16:9–20 differ markedly from the rest of Mark's Gospel.",
+          "manuscripts_supporting": "Absent from: Codex Sinaiticus (א), Codex Vaticanus (B), Sinaitic Syriac, Armenian manuscripts, Clement of Alexandria, Origen. Present in: Codex Alexandrinus (A), Codex Bezae (D), Codex Ephraemi (C), Freer Gospels (W), and the majority of later Byzantine manuscripts. The Freer Gospels (W) add an additional interpolation after verse 14.",
+          "scholarly_consensus": "Near-universal scholarly consensus holds that Mark 16:9–20 was not written by the author of the rest of Mark's Gospel. The NA28, UBS5, and all major critical editions mark it as a later addition. It was almost certainly composed by an early Christian writer in the 2nd century to provide a more satisfying conclusion to Mark's abrupt ending at 16:8. This is the most significant textual issue in the Synoptic Gospels.",
+          "doctrinal_impact": "Mark 16:9–20 contains theologically significant material: the Great Commission parallel (v. 15), 'signs following' including handling serpents and drinking poison (vv. 17–18), and the Ascension (v. 19). The snake-handling traditions in some American Protestant communities derive from verse 18. Mainstream scholars note that no essential Christian doctrine depends uniquely on this passage — resurrection appearances, the Great Commission, and the Ascension are all attested in other Gospels and Acts."
+        }
+      ],
+      "bracketed": true,
+      "bracket_note": "Mark 16:9–20 (the Long Ending) is absent from Codex Sinaiticus and Codex Vaticanus — the two oldest complete manuscripts — as well as several early versions and Church Fathers. The scholarly consensus is that it was added by a later author, not by the original writer of Mark. Modern Bibles typically include it with a note or brackets.",
+      "plain_english_summary": "The Long Ending of Mark (16:9–20) is the most debated textual question in the Synoptic Gospels. The two oldest complete Bibles (Codex Sinaiticus and Codex Vaticanus, both ~4th century) end Mark at 16:8 — 'for they were afraid.' The church historian Eusebius confirmed this was the state of 'accurate copies' in his time. The Long Ending appears to have been composed by a knowledgeable 2nd-century Christian who drew on the other Gospels to give Mark a less abrupt conclusion. This does not mean the material is historically false — it means it was written by a different author. Modern Bibles handle this honestly with footnotes or brackets. This is a case where transparency about the evidence actually strengthens confidence in the overall reliability of the manuscript tradition."
+    }
+  }
+}

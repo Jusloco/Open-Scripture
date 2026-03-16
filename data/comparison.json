@@ -1,0 +1,89 @@
+{
+  "texts": [
+    {
+      "title": "New Testament",
+      "author": "Various Apostolic Authors",
+      "written": "~50–100 AD",
+      "earliest_copy": "~100–150 AD",
+      "gap_years": 50,
+      "manuscript_count": 25000,
+      "notes": "P52 (John 18:31–33) dated ~100–150 AD is the earliest fragment. Over 5,800 Greek manuscripts alone, plus 20,000+ in other languages.",
+      "category": "scripture"
+    },
+    {
+      "title": "Julius Caesar — Gallic Wars",
+      "author": "Julius Caesar",
+      "written": "~58–50 BC",
+      "earliest_copy": "~900 AD",
+      "gap_years": 950,
+      "manuscript_count": 251,
+      "notes": "We rely on 10 manuscripts in good condition, the earliest from ~900 AD. No historian doubts Caesar wrote it.",
+      "category": "classical"
+    },
+    {
+      "title": "Homer — The Iliad",
+      "author": "Homer",
+      "written": "~800 BC",
+      "earliest_copy": "~400 BC",
+      "gap_years": 400,
+      "manuscript_count": 1757,
+      "notes": "Highest manuscript count of any ancient secular text — which is why the Iliad is considered exceptionally well-attested. The NT has 14x more manuscripts.",
+      "category": "classical"
+    },
+    {
+      "title": "Plato — Dialogues",
+      "author": "Plato",
+      "written": "~400 BC",
+      "earliest_copy": "~895 AD",
+      "gap_years": 1300,
+      "manuscript_count": 210,
+      "notes": "The earliest complete manuscript of Plato's dialogues is from ~895 AD — over 1,200 years after Plato wrote. No serious historian doubts their authenticity.",
+      "category": "classical"
+    },
+    {
+      "title": "Aristotle — Works",
+      "author": "Aristotle",
+      "written": "~350 BC",
+      "earliest_copy": "~1100 AD",
+      "gap_years": 1450,
+      "manuscript_count": 49,
+      "notes": "We have only 49 manuscripts of Aristotle, the earliest from ~1100 AD — 1,450 years after the originals. Aristotle's authorship is universally accepted.",
+      "category": "classical"
+    },
+    {
+      "title": "Tacitus — Annals",
+      "author": "Tacitus",
+      "written": "~116 AD",
+      "earliest_copy": "~850 AD",
+      "gap_years": 750,
+      "manuscript_count": 33,
+      "notes": "Only 33 manuscripts survive. Tacitus is one of the primary ancient sources for the reign of Tiberius — accepted without question by historians.",
+      "category": "classical"
+    },
+    {
+      "title": "Thucydides — History of the Peloponnesian War",
+      "author": "Thucydides",
+      "written": "~400 BC",
+      "earliest_copy": "~900 AD",
+      "gap_years": 1300,
+      "manuscript_count": 96,
+      "notes": "96 manuscripts, earliest from ~900 AD. The foundational text of Western historical writing — its authenticity is never questioned.",
+      "category": "classical"
+    },
+    {
+      "title": "Herodotus — Histories",
+      "author": "Herodotus",
+      "written": "~440 BC",
+      "earliest_copy": "~900 AD",
+      "gap_years": 1350,
+      "manuscript_count": 109,
+      "notes": "109 manuscripts surviving. Called the 'Father of History.' His accounts are accepted by historians with far fewer manuscripts than the NT.",
+      "category": "classical"
+    }
+  ],
+  "key_insight": "The consistency principle: every ancient text we accept as authentic has fewer manuscripts, larger time gaps, and less corroborating evidence than the New Testament. If you accept Caesar, Homer, or Plato — intellectual consistency requires taking the NT manuscript evidence at least as seriously.",
+  "footnotes": [
+    "Manuscript counts are approximate and vary by source. NT count of 25,000 includes Greek, Latin, Syriac, Coptic, Armenian, and other language manuscripts.",
+    "Sources: F.F. Bruce, 'The New Testament Documents: Are They Reliable?'; Norman Geisler & William Nix, 'A General Introduction to the Bible'; Bruce Metzger, 'The Text of the New Testament.'"
+  ]
+}

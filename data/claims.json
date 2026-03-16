@@ -1,0 +1,298 @@
+[
+  {
+    "slug": "bible-changed-over-time",
+    "claim": "The Bible was changed over time by scribes",
+    "verdict": "MISLEADING",
+    "verdict_color": "amber",
+    "short_answer": "Scribal changes exist and scholars have documented every single one — but the manuscript tradition is so large and geographically distributed that no systematic corruption was possible. Over 99% of the New Testament text is certain.",
+    "full_explanation": "The claim that scribes \"changed the Bible\" is technically true in the narrow sense that scribes made copying errors, and occasionally made intentional clarifications. What the claim implies — that the text has been systematically altered to say something different than the originals — is not supported by the evidence.\n\nThe New Testament has more manuscript witnesses than any other ancient document by orders of magnitude: over 5,800 Greek manuscripts, 10,000+ Latin manuscripts, and 9,000+ manuscripts in other languages. These manuscripts were copied independently across Egypt, Syria, Rome, North Africa, and Asia Minor. For a systematic change to have occurred, someone would have needed to alter all copies in all locations before they diverged — an organizational impossibility in the ancient world.\n\nWhen textual critics like Bruce Metzger and Bart Ehrman compare manuscripts, they find textual variants — places where copies differ. There are approximately 400,000 such variants across all manuscripts. But 75% of these are trivial spelling differences or word order variations that affect nothing. Fewer than 1% are both meaningful and viable, meaning they actually change the sense of a passage and have credible manuscript support. No Christian doctrine stands or falls on any of these disputed passages.\n\nThe irony is that the very process of identifying variants proves the text has not been successfully corrupted. Textual criticism works precisely because we have so many independent copies. If you change one stream of copies, the other streams expose the change immediately. The abundance of manuscripts is not a problem — it is the strongest possible guarantee of textual integrity.",
+    "key_evidence": [
+      {
+        "title": "25,000+ total manuscripts",
+        "detail": "The New Testament has more manuscript witnesses than any other ancient text. Homer's Iliad has ~1,757; Caesar's Gallic Wars has ~251. The sheer volume of independent copies makes systematic corruption impossible."
+      },
+      {
+        "title": "Geographic distribution prevents corruption",
+        "detail": "Manuscripts were copied independently in Rome, Alexandria, Antioch, Carthage, and Constantinople. No single authority controlled all copies simultaneously — any change in one region would be exposed by copies from other regions."
+      },
+      {
+        "title": "P52: Within a generation of the original",
+        "detail": "The John Rylands Papyrus (P52), containing John 18:31–33, dates to approximately 100–150 AD — within decades of John's composition. It matches the text we have today."
+      },
+      {
+        "title": "Ehrman himself sets the record straight",
+        "detail": "Bart Ehrman, the most prominent skeptical textual scholar, writes in 'Misquoting Jesus': 'Essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament.' The changes he documents are real but not theologically significant."
+      },
+      {
+        "title": "Church Fathers cite the text independently",
+        "detail": "Patristic writers (Clement, Ignatius, Polycarp, Irenaeus, Origen) cite New Testament texts extensively from the 1st–3rd centuries. Their citations allow scholars to reconstruct much of the NT independently of manuscripts — and the texts align."
+      }
+    ],
+    "relevant_manuscripts": ["P52 (John Rylands Papyrus)", "P66 (Bodmer Papyrus II)", "P75 (Bodmer XIV-XV)", "Codex Sinaiticus (א)", "Codex Vaticanus (B)"],
+    "scholarly_quote": {
+      "quote": "We have more than 1,000 times as many manuscripts of the New Testament as we have of the average classical author. And these manuscripts are much closer in time to the originals than is the case with most classical works.",
+      "scholar": "Bruce M. Metzger",
+      "credentials": "Professor of New Testament Language and Literature, Princeton Theological Seminary; lead editor of the United Bible Societies Greek New Testament"
+    },
+    "related_verses": ["John 1:1", "John 3:16", "John 7:53"]
+  },
+  {
+    "slug": "council-of-nicaea",
+    "claim": "The Council of Nicaea decided what books go in the Bible",
+    "verdict": "REFUTED",
+    "verdict_color": "emerald",
+    "short_answer": "The Council of Nicaea (325 AD) dealt with the nature of Christ — it said nothing about the biblical canon. The New Testament canon was shaped by centuries of usage and consensus before Nicaea, and formalized by later councils in 363, 393, and 397 AD.",
+    "full_explanation": "The claim that the Council of Nicaea selected the biblical canon — famously popularized by Dan Brown's 'The Da Vinci Code' — is simply historically false. The primary agenda of Nicaea was the Arian controversy: whether Jesus was of the same substance as the Father (homoousios) or merely similar (homoiousios). The word 'canon' does not appear in any of Nicaea's surviving records.\n\nThe New Testament canon was not determined at a single moment by a political vote. It was shaped gradually by three criteria applied by the early church over centuries: apostolicity (was it written by an apostle or close associate?), catholicity (was it accepted across all regions?), and orthodoxy (did it conform to the regula fidei, the rule of faith). Books like 1 Clement, Shepherd of Hermas, and the Epistle of Barnabas were read in some churches but ultimately not included because they failed one or more of these tests.\n\nThe earliest canonical lists appear well before Nicaea. The Muratorian Fragment (c. 170 AD) lists most of the New Testament books we have today. Origen (c. 240 AD) and Eusebius (c. 313 AD) both categorized NT books, distinguishing 'universally acknowledged' books from 'disputed' and 'rejected' ones. The Council of Laodicea (363 AD), the Council of Hippo (393 AD), and the Council of Carthage (397 AD) ratified the 27-book canon — not Nicaea.\n\nFurthermore, the canon that emerged from this process was not the product of political suppression. The so-called 'Gnostic gospels' (Gospel of Thomas, Gospel of Philip) were excluded not because Constantine suppressed them, but because they were written 100–200 years after the apostolic era, lacked apostolic authorship, and contradicted the teachings of churches with direct apostolic lineage.",
+    "key_evidence": [
+      {
+        "title": "Nicaea's agenda was Christological, not canonical",
+        "detail": "The Council of Nicaea was convened to resolve the Arian controversy about Christ's nature. Its output was the Nicene Creed and rulings on Easter dating and church authority. The canon is not mentioned in any Nicene document."
+      },
+      {
+        "title": "The Muratorian Fragment predates Nicaea by 150 years",
+        "detail": "This fragment (c. 170 AD) lists the books accepted by the Roman church as authoritative — including most of our New Testament. The canon was already substantially settled long before Constantine was born."
+      },
+      {
+        "title": "Origen's canonical lists (240 AD)",
+        "detail": "The theologian Origen, writing 85 years before Nicaea, distinguishes 'homologoumena' (acknowledged books) from 'antilegomena' (disputed books). His 'acknowledged' list closely matches our 27-book canon."
+      },
+      {
+        "title": "The actual canon councils came after Nicaea",
+        "detail": "The 27-book New Testament was formally ratified at the Councils of Hippo (393) and Carthage (397) — 68 and 72 years after Nicaea. These councils described themselves as ratifying what was already in widespread use."
+      },
+      {
+        "title": "No historical source supports the Nicaea-canon claim",
+        "detail": "Not a single ancient historian, bishop, or church record mentions a canon vote at Nicaea. When scholars challenge Dan Brown's claim, even skeptical historians agree: it is not supported by any historical evidence."
+      }
+    ],
+    "relevant_manuscripts": ["Codex Sinaiticus (א)", "Codex Vaticanus (B)", "Codex Alexandrinus (A)"],
+    "scholarly_quote": {
+      "quote": "The suggestion that the canon was determined at the Council of Nicaea has no historical support whatsoever. It is a modern myth with no basis in any ancient source.",
+      "scholar": "F.F. Bruce",
+      "credentials": "Rylands Professor of Biblical Criticism and Exegesis, University of Manchester; author of 'The Canon of Scripture'"
+    },
+    "related_verses": ["John 1:1", "John 20:31"]
+  },
+  {
+    "slug": "no-originals",
+    "claim": "We don't have the original manuscripts so we can't trust any of it",
+    "verdict": "MISLEADING",
+    "verdict_color": "amber",
+    "short_answer": "We don't have the originals of any ancient text — not Caesar, not Plato, not Homer. The New Testament is actually in a stronger position than any other ancient document because of the quantity, quality, and earliness of its manuscript copies.",
+    "full_explanation": "The 'no originals' objection, if applied consistently, would destroy our knowledge of all of ancient history. We do not possess the autographs of Caesar's Gallic Wars, Plato's Republic, Homer's Iliad, Tacitus's Annals, or any other ancient work. The standard of historical scholarship is not 'do we have the original?' but 'do we have reliable copies close enough in time to reconstruct the original with confidence?'\n\nBy that standard, the New Testament is in an extraordinary position. The earliest manuscript fragment of John's Gospel (P52) dates to approximately 100–150 AD — within a generation of the composition of the Gospel. The earliest complete manuscripts of the NT (Codex Vaticanus and Codex Sinaiticus) date to c. 325–360 AD. By contrast, the earliest manuscript of Caesar's Gallic Wars dates to the 9th century — 900 years after Caesar wrote it. The earliest Plato manuscript is from 895 AD, more than 1,200 years after Plato.\n\nTextual criticism — the scholarly discipline for reconstructing original texts from manuscript copies — was developed in part because of the wealth of New Testament manuscripts. With over 5,800 Greek manuscripts, scholars can compare readings across independent streams of transmission and identify later additions, scribal errors, and harmonizations with high precision. The result is a Greek New Testament text that most scholars consider extremely reliable.\n\nThe objection also misunderstands what 'trusting' a text means. Trust in an ancient document is not based on possessing the physical original — it is based on the manuscript tradition's quality, quantity, and temporal proximity to the original. On every one of those measures, the New Testament outperforms every other ancient text by a significant margin.",
+    "key_evidence": [
+      {
+        "title": "P52: 100–150 AD",
+        "detail": "The John Rylands Papyrus (P52) contains John 18:31–33, 37–38 and dates to 100–150 AD. This places a manuscript of John's Gospel within a generation of its composition — an extraordinary result for ancient literature."
+      },
+      {
+        "title": "Comparison with Caesar and Plato",
+        "detail": "The earliest manuscript of Caesar's Gallic Wars dates ~900 years after the original; Plato ~1,200 years. No one doubts Caesar or Plato on these grounds. The NT's earliest copies are within decades of composition, not centuries."
+      },
+      {
+        "title": "5,800+ Greek manuscripts allow cross-checking",
+        "detail": "The volume of independent manuscript streams means scholars can identify and correct scribal errors by comparing copies. If one stream has an error, multiple other streams expose it. The original text can be reconstructed with high confidence."
+      },
+      {
+        "title": "P66 and P75: 175–225 AD",
+        "detail": "The Bodmer Papyri (P66 and P75) contain large portions of John and Luke/John and date to c. 175–225 AD. They are the earliest extensive manuscript witnesses to the Gospels and largely match the text used today."
+      },
+      {
+        "title": "Church Father citations provide independent verification",
+        "detail": "Patristic writers of the 1st–3rd centuries cite the NT so extensively that scholars estimate the entire NT could be reconstructed from their quotations alone, independent of any manuscripts."
+      }
+    ],
+    "relevant_manuscripts": ["P52 (John Rylands Papyrus)", "P66 (Bodmer Papyrus II)", "P75 (Bodmer XIV-XV)", "Codex Sinaiticus (א)", "Codex Vaticanus (B)"],
+    "scholarly_quote": {
+      "quote": "The interval between the dates of original composition and the earliest extant evidence becomes so small as to be in fact negligible, and the last foundation for any doubt that the Scriptures have come down to us substantially as they were written has now been removed.",
+      "scholar": "Frederic G. Kenyon",
+      "credentials": "Director and Principal Librarian of the British Museum; author of 'Our Bible and the Ancient Manuscripts'"
+    },
+    "related_verses": ["John 1:1", "John 18:31", "John 20:30"]
+  },
+  {
+    "slug": "woman-caught-in-adultery",
+    "claim": "The story of the woman caught in adultery was added later",
+    "verdict": "TRUE BUT MISUNDERSTOOD",
+    "verdict_color": "amber",
+    "short_answer": "This is true, and every reputable modern Bible says so in its footnotes — the passage (John 7:53–8:11) does not appear in the earliest manuscripts. But this is not a secret: it is openly documented, and no Christian doctrine depends on it.",
+    "full_explanation": "The pericope adulterae — John 7:53–8:11, the story of the woman caught in adultery — is almost certainly not original to John's Gospel. This is the scholarly consensus and it is printed in the footnotes or brackets of every major modern Bible translation, including the ESV, NIV, NASB, and even the more conservative NKJV. It is not a suppressed fact; it is openly acknowledged.\n\nThe textual evidence is unambiguous. The passage is absent from the oldest and most reliable Greek manuscripts: P66, P75, Codex Sinaiticus (א), Codex Vaticanus (B), and Codex Alexandrinus (A). When it does appear (from the 5th century onward), it appears in at least four different locations — sometimes after John 7:36, sometimes after John 21:25, sometimes after Luke 21:38. This instability of placement is a classic sign of a floating tradition being inserted into different manuscripts by different scribes.\n\nThe early church was silent on this passage. Origen, John Chrysostom, Theodore of Mopsuestia, and Cyril of Alexandria — prolific commentators on John — all skip from John 7:52 directly to John 8:12 without acknowledging any intervening text. Jerome (c. 380 AD) noted it appeared in manuscripts 'of many' — but his qualification suggests it was not universally attested even in the 4th century.\n\nWhat this does not mean is that the story is fabricated. Many scholars believe the pericope preserves an authentic oral tradition about Jesus. Augustine mentions a tradition that scribes removed it from their manuscripts because they feared it would encourage adultery — which may explain its late appearance in the written tradition. The story is consistent with Jesus's teaching elsewhere and is internally coherent. It just was not part of John's original composition. This is the kind of honest, documented complexity that builds trust rather than undermining it.",
+    "key_evidence": [
+      {
+        "title": "Absent from the earliest manuscripts",
+        "detail": "P66, P75, Codex Sinaiticus, and Codex Vaticanus — the oldest and most reliable manuscripts of John — all lack the pericope adulterae. These manuscripts date from 175 AD to 360 AD."
+      },
+      {
+        "title": "Appears in four different locations",
+        "detail": "When the passage does appear in later manuscripts, scribes place it in at least four different positions within John and Luke. This instability of placement indicates it was a floating tradition, not a fixed part of the text."
+      },
+      {
+        "title": "Early church fathers skip over it",
+        "detail": "Origen, John Chrysostom (who wrote 88 homilies on John), and Cyril of Alexandria all comment on John 7:52 then immediately proceed to John 8:12. None acknowledge any intervening passage."
+      },
+      {
+        "title": "Modern Bibles document this openly",
+        "detail": "Every major modern translation (ESV, NIV, NASB, CSB) puts the passage in double brackets and includes a footnote explaining the manuscript evidence. The ESV footnote reads: 'The earliest manuscripts do not include 7:53–8:11.'"
+      },
+      {
+        "title": "No doctrine depends on it",
+        "detail": "The theological content of the passage — Jesus's mercy toward sinners, his rejection of self-righteous judgment — is amply attested in other passages (Luke 15, John 3:17). Nothing is lost doctrinally by bracketing it."
+      }
+    ],
+    "relevant_manuscripts": ["P66 (Bodmer Papyrus II)", "P75 (Bodmer XIV-XV)", "Codex Sinaiticus (א)", "Codex Vaticanus (B)", "Codex Bezae (D)"],
+    "scholarly_quote": {
+      "quote": "The evidence for the non-Johannine origin of the pericope of the adulteress is overwhelming. It is absent from such early and diverse manuscripts that most scholars are certain it was not part of the original Gospel.",
+      "scholar": "Bruce M. Metzger",
+      "credentials": "Professor of New Testament Language and Literature, Princeton Theological Seminary; author of 'A Textual Commentary on the Greek New Testament'"
+    },
+    "related_verses": ["John 7:53", "John 8:1", "John 8:11"]
+  },
+  {
+    "slug": "mark-ending",
+    "claim": "The ending of Mark was added by scribes",
+    "verdict": "TRUE BUT MISUNDERSTOOD",
+    "verdict_color": "amber",
+    "short_answer": "The longer ending of Mark (16:9–20) was almost certainly added by a later scribe — the manuscript evidence is clear, modern Bibles document this, and no core Christian teaching relies on the disputed ending.",
+    "full_explanation": "Mark 16:9–20, known as the 'Long Ending of Mark,' is one of the most well-documented textual issues in the New Testament. The manuscript evidence against its originality is strong and the scholarly consensus spans both conservative and liberal scholars.\n\nThe Long Ending is absent from the two oldest and most complete manuscripts of the New Testament: Codex Sinaiticus (א) and Codex Vaticanus (B), both dating to approximately 325–360 AD. The great 4th-century church historian Eusebius and the biblical scholar Jerome both noted that the passage was absent from most manuscripts known to them. In addition to these two manuscripts, the ending is absent from several important Syriac, Armenian, Coptic, and Georgian witnesses.\n\nInternal evidence also points against Markan authorship. The vocabulary, style, and grammar of 16:9–20 differ markedly from the rest of Mark. The passage uses 17 words not found elsewhere in Mark, and the transition from verse 8 to verse 9 is awkward — Mary Magdalene, just mentioned in verse 8, is re-introduced in verse 9 as though for the first time. The abrupt ending at 16:8 ('for they were afraid') troubles many readers, but it is consistent with Mark's literary style elsewhere.\n\nThere are actually three different endings found in different manuscripts: the Long Ending (16:9–20), the Short Ending (a single sentence added after 16:8 in some manuscripts), and a 'Freer Logion' inserted within the Long Ending in one major manuscript (Codex Washingtonianus). This multiplicity of endings is itself strong evidence that the original ending at verse 8 left later scribes feeling it was incomplete, prompting different communities to supply different conclusions.\n\nThis is transparently documented in all major modern translations. The ESV, NIV, and NASB print both the Long and Short endings with explanatory footnotes. This is not a cover-up — it is exactly how serious scholarship handles the evidence.",
+    "key_evidence": [
+      {
+        "title": "Absent from Sinaiticus and Vaticanus",
+        "detail": "The two oldest complete NT manuscripts, Codex Sinaiticus and Codex Vaticanus (both c. 325–360 AD), both end Mark at 16:8. The scribe of Vaticanus even left a blank column after 16:8, suggesting awareness that some copies had additional text."
+      },
+      {
+        "title": "Eusebius and Jerome confirm the absence",
+        "detail": "Eusebius of Caesarea (c. 313 AD) wrote that the passage 'does not appear in all copies.' Jerome (c. 380 AD) repeated the same observation. These are the most learned biblical scholars of the 4th century."
+      },
+      {
+        "title": "17 unique vocabulary words",
+        "detail": "Linguistic analysis of Mark 16:9–20 identifies 17 Greek words not used elsewhere in Mark. The style and phrasing differ significantly from the rest of the Gospel, pointing to a different author."
+      },
+      {
+        "title": "Three competing endings prove the original was felt incomplete",
+        "detail": "The existence of a Long Ending, a Short Ending, and the Freer Logion — three different endings found in different manuscripts — demonstrates that multiple scribal communities independently tried to 'complete' what felt like an abrupt ending at 16:8."
+      },
+      {
+        "title": "No doctrine depends on the Long Ending",
+        "detail": "The theological content of the Long Ending (resurrection appearances, the Great Commission) is attested in Matthew 28, Luke 24, and John 20–21. The Long Ending adds nothing doctrinally unique."
+      }
+    ],
+    "relevant_manuscripts": ["Codex Sinaiticus (א)", "Codex Vaticanus (B)", "Codex Alexandrinus (A)", "Codex Washingtonianus (W)"],
+    "scholarly_quote": {
+      "quote": "The last twelve verses of the commonly received text of Mark are absent from the two oldest Greek manuscripts of the Gospel, are lacking in some of the oldest versional and patristic witnesses, and are present in several different forms in other witnesses.",
+      "scholar": "Bruce M. Metzger",
+      "credentials": "Professor of New Testament Language and Literature, Princeton Theological Seminary; author of 'A Textual Commentary on the Greek New Testament'"
+    },
+    "related_verses": ["John 20:1", "John 20:19", "John 21:1"]
+  },
+  {
+    "slug": "400000-variants",
+    "claim": "There are 400,000 textual variants — the Bible is unreliable",
+    "verdict": "MISLEADING",
+    "verdict_color": "amber",
+    "short_answer": "The 400,000 figure is accurate but deeply misleading. The vast majority are trivial spelling variations, word order differences, and obvious scribal slips. Fewer than 1% are both meaningful and viable, and none affect any core Christian doctrine.",
+    "full_explanation": "The claim that the New Testament has 400,000 textual variants is technically accurate, and it is actually Bart Ehrman — the most prominent skeptical New Testament scholar — who popularized it. But Ehrman himself has clarified in subsequent interviews and writings that the number is misleading when presented without context.\n\nTextual variants are counted per manuscript, not per unique variation. When 500 manuscripts all share the same spelling error in a single word, that counts as 500 variants — not one. The sheer number of manuscripts (25,000+) means that even tiny differences multiply rapidly. It would be more accurate to ask: how many meaningfully distinct textual questions exist in the New Testament? The answer, according to most scholars, is approximately 1,400 places of 'significant variation' — and of those, fewer than 50 affect any passage of theological importance.\n\nTextual critics categorize variants by two criteria: (1) 'meaningful' — does the variant change the meaning of the text? (2) 'viable' — does the variant have credible manuscript support? The overlap of both categories is small. Spelling differences (the most common type) are not meaningful. Later additions with weak manuscript support are not viable. When you filter for variants that are both meaningful and viable, Daniel Wallace estimates you are left with about 400 passages — and none of them affect any core Christian teaching.\n\nThe 400,000 number is also a sign of textual health, not sickness. The reason we can count variants at all is that we have so many manuscripts. If there were only 5 manuscripts of the New Testament, scholars would have far fewer variants — but far less confidence in their reconstruction of the original. The manuscripts' abundance is what makes textual criticism possible and the original text recoverable. As Ehrman himself wrote in 'Misquoting Jesus': 'Essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament.'",
+    "key_evidence": [
+      {
+        "title": "75% of variants are trivial spelling differences",
+        "detail": "The largest category of variants consists of orthographic differences — spelling variations, movable nu, vowel differences — that have no effect on pronunciation, translation, or meaning. These are counted per manuscript, inflating the total significantly."
+      },
+      {
+        "title": "The number grows with manuscript wealth",
+        "detail": "The more manuscripts you have, the more variants you can identify. If the NT had only 10 manuscripts (like most ancient texts), the variant count would be drastically lower — but confidence in the original text would also be drastically lower. The 400,000 figure reflects the NT's extraordinary manuscript wealth."
+      },
+      {
+        "title": "Ehrman himself limits the theological impact",
+        "detail": "Bart Ehrman, who popularized the 400,000 figure, writes explicitly: 'I don't think that any of the variants we have affect the core theological beliefs of Christians.' He holds unorthodox views about Christianity — but he does not claim the variants change the fundamental message."
+      },
+      {
+        "title": "Only ~400 passages are both meaningful and viable",
+        "detail": "Daniel Wallace of the Center for the Study of New Testament Manuscripts estimates that roughly 400 variants are both meaningful and viable. None of these affect any cardinal doctrine of Christian faith."
+      },
+      {
+        "title": "The NT text is 99%+ certain",
+        "detail": "Norman Geisler and William Nix estimate that 97.5% of the NT text is beyond reasonable doubt, and Metzger estimates the figure is even higher for major passages. The remaining uncertainty affects nothing of theological significance."
+      }
+    ],
+    "relevant_manuscripts": ["P52 (John Rylands Papyrus)", "P66 (Bodmer Papyrus II)", "P75 (Bodmer XIV-XV)", "Codex Sinaiticus (א)", "Codex Vaticanus (B)"],
+    "scholarly_quote": {
+      "quote": "Essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament. The most important Christian doctrines do not depend on the disputed passages.",
+      "scholar": "Bart D. Ehrman",
+      "credentials": "Professor of Religious Studies, University of North Carolina Chapel Hill; author of 'Misquoting Jesus' (a skeptic conceding the point)"
+    },
+    "related_verses": ["John 1:1", "John 3:16", "John 14:6"]
+  },
+  {
+    "slug": "comma-johanneum",
+    "claim": "The Trinity verse in 1 John was a medieval addition",
+    "verdict": "TRUE BUT MISUNDERSTOOD",
+    "verdict_color": "amber",
+    "short_answer": "The 'Comma Johanneum' (1 John 5:7b–8a in the KJV) is almost certainly a medieval Latin addition, absent from all Greek manuscripts before the 14th century. This is acknowledged by textual scholars across the theological spectrum — and the Trinity is not dependent on it.",
+    "full_explanation": "The Comma Johanneum is the phrase in 1 John 5:7–8 that reads in the King James Version: 'For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one. And there are three that bear witness in earth...' The bold portion ('the Father, the Word, and the Holy Ghost: and these three are one. And there are three that bear witness in earth') is the Comma Johanneum — and it is absent from essentially all Greek manuscripts.\n\nThe textual evidence against the Comma Johanneum is overwhelming. It does not appear in any Greek manuscript before the 14th century (the earliest is manuscript 61, Codex Montfortianus, from c. 1520 AD — which Erasmus suspected was forged specifically to pressure him into including the phrase). It is absent from all the oldest and most reliable Greek manuscripts: Codex Sinaiticus, Codex Vaticanus, Codex Alexandrinus, the Bodmer Papyri. It is also absent from most early Latin manuscripts, Syriac, Coptic, Armenian, and Ethiopian versions.\n\nThe phrase appears to have originated as a marginal comment in Latin manuscripts — possibly from the writings of Priscillian of Spain (late 4th century) — that was gradually incorporated into the main text by copyists who mistook the gloss for original text. This is a known phenomenon in manuscript transmission. The Council of Trent in 1546 included the verse in the Clementine Vulgate, cementing it in Catholic Latin tradition and eventually influencing the Textus Receptus underlying the KJV.\n\nThe important point is that the Trinity is not dependent on the Comma Johanneum. The doctrine of the Trinity is established from dozens of passages: John 1:1, John 10:30, John 14:26, Matthew 28:19, 2 Corinthians 13:14, and more. Even the surrounding context of 1 John 5:6–8 in its uncorrupted form is Trinitarian in character. The absence of one late gloss does not touch the doctrine.",
+    "key_evidence": [
+      {
+        "title": "Absent from all Greek manuscripts before the 14th century",
+        "detail": "Not a single Greek manuscript of 1 John from before the 14th century contains the Comma Johanneum. The two Greek manuscripts that do contain it (including Codex Montfortianus, c. 1520) are late and show signs of having been produced specifically to support the phrase."
+      },
+      {
+        "title": "Absent from early Latin, Syriac, Coptic, and Armenian manuscripts",
+        "detail": "The earliest Latin manuscripts do not contain the phrase. The vast majority of Old Latin, Syriac, Coptic, Armenian, and Ethiopic manuscripts lack it. Its absence in virtually all early versions confirms it is not original."
+      },
+      {
+        "title": "No early church father quotes it",
+        "detail": "If the Comma Johanneum were original, we would expect the Church Fathers to quote it extensively in Trinitarian controversies. Instead, writers like Tertullian, Origen, Athanasius, and Augustine — all fierce defenders of Trinitarian theology — never cite it. This silence is significant."
+      },
+      {
+        "title": "Erasmus' reluctant inclusion",
+        "detail": "The humanist scholar Erasmus excluded the Comma from his 1516 and 1519 Greek New Testaments on textual grounds. He was pressured to include it in his 1522 edition after a late manuscript (Codex Montfortianus) was produced — but he noted his suspicion that the manuscript was made specifically for this purpose."
+      },
+      {
+        "title": "The Trinity is established without it",
+        "detail": "John 1:1, John 10:30 ('I and the Father are one'), Matthew 28:19 (the Trinitarian baptismal formula), John 14:26, and 2 Corinthians 13:14 all establish Trinitarian theology independent of 1 John 5:7. The doctrine does not rest on the Comma."
+      }
+    ],
+    "relevant_manuscripts": ["Codex Sinaiticus (א)", "Codex Vaticanus (B)", "Codex Alexandrinus (A)", "Codex Montfortianus (61)"],
+    "scholarly_quote": {
+      "quote": "The Comma Johanneum is not found in any Greek manuscript of the New Testament before the fourteenth century, and its absence from the great majority of witnesses to the text of the New Testament makes its claim to be original very doubtful.",
+      "scholar": "Bruce M. Metzger",
+      "credentials": "Professor of New Testament Language and Literature, Princeton Theological Seminary; author of 'A Textual Commentary on the Greek New Testament'"
+    },
+    "related_verses": ["John 1:1", "John 10:30", "John 14:26"]
+  },
+  {
+    "slug": "jesus-never-claimed-deity",
+    "claim": "Jesus never claimed to be God — that was added later",
+    "verdict": "REFUTED",
+    "verdict_color": "emerald",
+    "short_answer": "The divine claims of Jesus are embedded in the earliest strata of New Testament tradition — including Paul's letters (written within 20 years of the crucifixion) and the 'I AM' statements in John, which are attested in our oldest manuscripts. The idea that deity claims were 'added later' contradicts the manuscript evidence.",
+    "full_explanation": "The claim that Jesus never presented himself as divine — and that this was a later theological invention — founders on the manuscript evidence and the internal chronology of the New Testament texts. The earliest documents in the NT are Paul's letters, written between approximately 48 and 65 AD, which would be within 15–35 years of the crucifixion (c. 30–33 AD). In these letters, Paul uses the divine title 'Lord' (kyrios) for Jesus in contexts where it clearly carries divine weight (Philippians 2:6–11, 1 Corinthians 8:6), and places Jesus within the Shema — the foundational Jewish monotheistic formula — as a shocking theological claim.\n\nIn the Gospel of John, Jesus makes seven 'I AM' (ego eimi) declarations that echo God's self-identification to Moses in Exodus 3:14. These include 'I AM the bread of life,' 'I AM the resurrection and the life,' 'I AM the way, the truth, and the life,' and — most striking — the absolute 'Before Abraham was, I AM' (John 8:58), to which his audience immediately attempted to stone him for blasphemy. This reaction is historically significant: his contemporaries understood the claim.\n\nThese claims are not in disputed passages. John 1:1, 'In the beginning was the Word, and the Word was with God, and the Word was God,' is attested in our earliest manuscripts of John: P66 (c. 175–200 AD) and P75 (c. 175–225 AD). The text has not been altered. The claim was present in the earliest copies.\n\nBart Ehrman — again, a skeptic — has argued not that divinity claims were 'added' to texts, but that the process of theological development happened early, not late. He does not claim the manuscripts were changed; he argues the first Christians were already making divine claims for Jesus within years of his death. This concession from the leading skeptical scholar is important: even those who doubt the theology do not dispute the text.",
+    "key_evidence": [
+      {
+        "title": "Paul's letters predate the Gospels",
+        "detail": "Paul's letters (c. 48–65 AD) are the earliest NT documents and already attribute divine titles and functions to Jesus. Philippians 2:6–11 uses language drawn from Isaiah's 'Servant Songs' about God — applied to Jesus — and was likely a pre-Pauline hymn, making it even earlier."
+      },
+      {
+        "title": "John 1:1 attested in P66 and P75",
+        "detail": "The Bodmer Papyri (P66 and P75), dating to c. 175–225 AD, contain John 1:1 in essentially the form we have it today: 'In the beginning was the Word, and the Word was with God, and the Word was God.' These are not later additions — they are among our oldest manuscripts."
+      },
+      {
+        "title": "The 'I AM' statements caused an immediate stoning attempt",
+        "detail": "John 8:58–59: When Jesus says 'Before Abraham was, I AM,' his audience immediately picks up stones. This reaction makes no sense unless they understood him to be claiming the divine name (Exodus 3:14). The reaction is embedded in the earliest manuscript tradition."
+      },
+      {
+        "title": "Even Ehrman acknowledges the early date of deity claims",
+        "detail": "Bart Ehrman argues in 'How Jesus Became God' that divine claims for Jesus developed early — within years or decades of the crucifixion — not centuries later. He disputes the theology, not the manuscript record. Even the leading skeptic does not claim the text was later altered."
+      },
+      {
+        "title": "Jewish audiences understood and rejected the claims",
+        "detail": "Multiple passages in John record attempts to stone Jesus specifically for blasphemy (John 5:18, 8:58–59, 10:30–33). The charge of blasphemy presupposes that his audience understood him to be claiming divine identity. These reactions are embedded in the oldest manuscripts."
+      }
+    ],
+    "relevant_manuscripts": ["P52 (John Rylands Papyrus)", "P66 (Bodmer Papyrus II)", "P75 (Bodmer XIV-XV)", "Codex Sinaiticus (א)", "Codex Vaticanus (B)"],
+    "scholarly_quote": {
+      "quote": "The view that Jesus was divine is early — it can be found in the earliest documents we have of Christianity. Paul's letters, written within twenty years of Jesus's death, already speak of Jesus in divine terms.",
+      "scholar": "Bart D. Ehrman",
+      "credentials": "Professor of Religious Studies, University of North Carolina Chapel Hill; author of 'How Jesus Became God' (a skeptic conceding the early date of the evidence)"
+    },
+    "related_verses": ["John 1:1", "John 8:58", "John 10:30", "John 14:6"]
+  }
+]

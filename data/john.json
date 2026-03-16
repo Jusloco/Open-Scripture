@@ -1,0 +1,1206 @@
+{
+  "book": "John",
+  "total_greek_manuscripts": 1650,
+  "total_latin_manuscripts": 8000,
+  "total_syriac_manuscripts": 350,
+  "total_all_languages": 25000,
+  "earliest_complete_manuscript": "Codex Sinaiticus (~360 AD)",
+  "chapters": [
+    {
+      "number": 1,
+      "verse_count": 51,
+      "summary": "The Word made flesh; John the Baptist; calling of the first disciples",
+      "manuscripts_note": "Covered by P66 (~175 AD) and P75 (~200 AD), two of the oldest surviving New Testament papyri",
+      "key_verses": [
+        1,
+        14,
+        18
+      ]
+    },
+    {
+      "number": 2,
+      "verse_count": 25,
+      "summary": "Wedding at Cana; cleansing of the Temple",
+      "key_verses": [
+        1,
+        11
+      ]
+    },
+    {
+      "number": 3,
+      "verse_count": 36,
+      "summary": "Nicodemus; born again; God so loved the world",
+      "key_verses": [
+        16
+      ]
+    },
+    {
+      "number": 4,
+      "verse_count": 54,
+      "summary": "Woman at the well; healing the official's son",
+      "key_verses": [
+        24
+      ]
+    },
+    {
+      "number": 5,
+      "verse_count": 47,
+      "summary": "Healing at Bethesda; Jesus and the Father",
+      "manuscripts_note": "Verse 4 (the angel stirring the water) is absent from the earliest manuscripts",
+      "key_verses": [
+        4
+      ]
+    },
+    {
+      "number": 6,
+      "verse_count": 71,
+      "summary": "Feeding 5,000; walking on water; Bread of Life discourse",
+      "key_verses": [
+        35,
+        68
+      ]
+    },
+    {
+      "number": 7,
+      "verse_count": 53,
+      "summary": "Feast of Tabernacles; division over Jesus",
+      "manuscripts_note": "Verses 53 and following (the woman caught in adultery) are not original to John — see Chapter 8",
+      "key_verses": [
+        37,
+        38
+      ]
+    },
+    {
+      "number": 8,
+      "verse_count": 59,
+      "summary": "Woman caught in adultery (later addition); 'I am the light of the world'; 'Before Abraham was, I am'",
+      "manuscripts_note": "Verses 1–11 (Pericope Adulterae) are absent from all early papyri and major 4th-century codices",
+      "key_verses": [
+        1,
+        12,
+        58
+      ]
+    },
+    {
+      "number": 9,
+      "verse_count": 41,
+      "summary": "Healing of the man born blind",
+      "key_verses": [
+        25
+      ]
+    },
+    {
+      "number": 10,
+      "verse_count": 42,
+      "summary": "The Good Shepherd; 'I and the Father are one'",
+      "key_verses": [
+        11,
+        30
+      ]
+    },
+    {
+      "number": 11,
+      "verse_count": 57,
+      "summary": "Raising of Lazarus; 'I am the resurrection and the life'",
+      "key_verses": [
+        25,
+        35
+      ]
+    },
+    {
+      "number": 12,
+      "verse_count": 50,
+      "summary": "Mary anoints Jesus; triumphal entry; Greeks seek Jesus",
+      "key_verses": [
+        3
+      ]
+    },
+    {
+      "number": 13,
+      "verse_count": 38,
+      "summary": "Washing the disciples' feet; the new commandment",
+      "key_verses": [
+        34,
+        35
+      ]
+    },
+    {
+      "number": 14,
+      "verse_count": 31,
+      "summary": "'I am the way, the truth, and the life'; promise of the Holy Spirit",
+      "key_verses": [
+        6
+      ]
+    },
+    {
+      "number": 15,
+      "verse_count": 27,
+      "summary": "The True Vine; abiding in Christ; the world's hatred",
+      "key_verses": [
+        5,
+        13
+      ]
+    },
+    {
+      "number": 16,
+      "verse_count": 33,
+      "summary": "The work of the Holy Spirit; grief turned to joy",
+      "key_verses": [
+        33
+      ]
+    },
+    {
+      "number": 17,
+      "verse_count": 26,
+      "summary": "The High Priestly Prayer",
+      "key_verses": [
+        17,
+        21
+      ]
+    },
+    {
+      "number": 18,
+      "verse_count": 40,
+      "summary": "Betrayal and arrest; Peter's denial; Jesus before Pilate",
+      "key_verses": []
+    },
+    {
+      "number": 19,
+      "verse_count": 42,
+      "summary": "Crucifixion and burial of Jesus",
+      "manuscripts_note": "Covered by P52 — the oldest known NT fragment (~100–150 AD) contains John 18:31–33, 37–38",
+      "key_verses": [
+        30
+      ]
+    },
+    {
+      "number": 20,
+      "verse_count": 31,
+      "summary": "The resurrection; appearances to Mary, disciples, and Thomas",
+      "key_verses": [
+        28,
+        31
+      ]
+    },
+    {
+      "number": 21,
+      "verse_count": 25,
+      "summary": "Appearance at the Sea of Galilee; Peter restored; the beloved disciple",
+      "key_verses": [
+        25
+      ]
+    }
+  ],
+  "key_verses": {
+    "1:1": {
+      "reference": "John 1:1",
+      "chapter": 1,
+      "verse": 1,
+      "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Ἐν ἀρχῇ",
+          "english": "In the beginning"
+        },
+        {
+          "greek": "ἦν",
+          "english": "was"
+        },
+        {
+          "greek": "ὁ Λόγος",
+          "english": "the Word"
+        },
+        {
+          "greek": "καὶ",
+          "english": "and"
+        },
+        {
+          "greek": "ὁ Λόγος",
+          "english": "the Word"
+        },
+        {
+          "greek": "ἦν",
+          "english": "was"
+        },
+        {
+          "greek": "πρὸς τὸν Θεόν",
+          "english": "with God"
+        },
+        {
+          "greek": "καὶ",
+          "english": "and"
+        },
+        {
+          "greek": "Θεὸς",
+          "english": "God"
+        },
+        {
+          "greek": "ἦν",
+          "english": "was"
+        },
+        {
+          "greek": "ὁ Λόγος",
+          "english": "the Word"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "One of the best-preserved New Testament papyri, containing most of the Gospel of John. Written in a clear scribal hand, dated to approximately 175 AD."
+      },
+      "earliest_church_father_citation": {
+        "author": "Justin Martyr",
+        "date": "~155 AD",
+        "work": "First Apology",
+        "quote": "In the beginning He was the Logos and the Logos was with God..."
+      },
+      "variants": [
+        {
+          "description": "Some Gnostic groups in the 2nd century read 'a god' (without the article) to imply a lesser divine being. No Greek manuscript supports this reading.",
+          "manuscripts_supporting": "Zero Greek manuscripts. Modern translations like the New World Translation use this reading based on theological interpretation, not manuscript evidence.",
+          "scholarly_consensus": "Mainstream textual scholarship unanimously reads 'was God' (θεός without the article follows standard Greek grammar for predicate nominatives — Colwell's Rule). The anarthrous construction does not imply 'a god.'",
+          "doctrinal_impact": "This is the most theologically significant verse in John. The manuscript evidence is completely uniform — the debate is entirely grammatical and theological, not textual."
+        }
+      ],
+      "plain_english_summary": "John 1:1 is one of the most scrutinized verses in the Bible — and one of the most rock-solid. It appears in every manuscript tradition, in every language, from the 2nd century onward. There is no manuscript anywhere that omits it or substantially alters it. The debate over this verse is entirely grammatical (how to translate ancient Greek) — not about what the manuscripts actually say. They all agree.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform across all manuscripts",
+        "metzger_notes": "Metzger's Textual Commentary does not discuss John 1:1 as a textual variant because the Greek manuscript tradition is completely uniform. Every papyrus, uncial, minuscule, and version reads θεὸς ἦν ὁ Λόγος. The controversy over this verse is grammatical and theological — not textual.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD)",
+          "P75 (~200 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "All critical editions (NA28, UBS5, ECM) read θεὸς ἦν ὁ Λόγος. No scholarly critical edition supports the 'a god' rendering. The anarthrous predicate nominative follows standard Greek syntax (Colwell's Rule, 1933).",
+        "further_reading": "E.C. Colwell, 'A Definite Rule for the Use of the Article in the Greek New Testament,' JBL 52 (1933): 12–21."
+      }
+    },
+    "1:14": {
+      "reference": "John 1:14",
+      "chapter": 1,
+      "verse": 14,
+      "text": "And the Word was made flesh, and dwelt among us, (and we beheld his glory, the glory as of the only begotten of the Father,) full of grace and truth.",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7900,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 198,
+      "armenian_manuscripts": 148,
+      "greek_words": [
+        {
+          "greek": "Καὶ",
+          "english": "And"
+        },
+        {
+          "greek": "ὁ Λόγος",
+          "english": "the Word"
+        },
+        {
+          "greek": "σὰρξ ἐγένετο",
+          "english": "was made flesh"
+        },
+        {
+          "greek": "καὶ ἐσκήνωσεν ἐν ἡμῖν",
+          "english": "and dwelt among us"
+        },
+        {
+          "greek": "καὶ ἐθεασάμεθα",
+          "english": "and we beheld"
+        },
+        {
+          "greek": "τὴν δόξαν αὐτοῦ",
+          "english": "his glory"
+        },
+        {
+          "greek": "δόξαν ὡς μονογενοῦς",
+          "english": "glory as of the only begotten"
+        },
+        {
+          "greek": "παρὰ πατρός",
+          "english": "of the Father"
+        },
+        {
+          "greek": "πλήρης χάριτος",
+          "english": "full of grace"
+        },
+        {
+          "greek": "καὶ ἀληθείας",
+          "english": "and truth"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "P66 clearly contains John 1:14 in excellent condition."
+      },
+      "earliest_church_father_citation": {
+        "author": "Irenaeus of Lyon",
+        "date": "~180 AD",
+        "work": "Against Heresies",
+        "quote": "The Word of God became man, assimilating Himself to man, and man to Himself..."
+      },
+      "variants": [],
+      "plain_english_summary": "John 1:14 — 'The Word became flesh' — is universally attested across every manuscript tradition. No meaningful textual variant exists. The verse that forms the heart of Christian incarnation theology is one of the most securely transmitted verses in ancient literature.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 1:14 has no significant textual variants. The reading σὰρξ ἐγένετο ('became flesh') is attested in all manuscripts from the earliest papyri onward. The doctrinal centrality of this verse did not generate scribal alteration.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD)",
+          "P75 (~200 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "Uniform across all manuscript traditions. NA28 and UBS5 print the text without a critical apparatus entry.",
+        "further_reading": "Metzger, Bruce M. A Textual Commentary on the Greek New Testament, 2nd ed. Stuttgart: UBS, 1994."
+      }
+    },
+    "1:18": {
+      "reference": "John 1:18",
+      "chapter": 1,
+      "verse": 18,
+      "text": "No man hath seen God at any time; the only begotten Son, which is in the bosom of the Father, he hath declared him.",
+      "confidence": "yellow",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Θεὸν",
+          "english": "God"
+        },
+        {
+          "greek": "οὐδεὶς ἑώρακεν πώποτε",
+          "english": "no man hath seen at any time"
+        },
+        {
+          "greek": "μονογενὴς θεὸς",
+          "english": "the only begotten God"
+        },
+        {
+          "greek": "ὁ ὢν",
+          "english": "who is"
+        },
+        {
+          "greek": "εἰς τὸν κόλπον τοῦ πατρὸς",
+          "english": "in the bosom of the Father"
+        },
+        {
+          "greek": "ἐκεῖνος ἐξηγήσατο",
+          "english": "he hath declared him"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "P66 reads 'only begotten God' (μονογενὴς θεός) — a significant early reading."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on John"
+      },
+      "variants": [
+        {
+          "description": "The earliest manuscripts (P66, P75, Sinaiticus, Vaticanus) read 'only begotten God' (μονογενὴς θεός). Later manuscripts read 'only begotten Son' (μονογενὴς υἱός). The KJV follows the later reading.",
+          "manuscripts_supporting": "P66, P75, Codex Sinaiticus, Codex Vaticanus: 'only begotten God.' Later Byzantine manuscripts: 'only begotten Son.'",
+          "scholarly_consensus": "Most modern translations (ESV, NIV, NASB) follow the earlier manuscripts and read 'the only God' or 'God the only Son.' Both readings affirm the same theological point — the uniqueness and divinity of Jesus.",
+          "doctrinal_impact": "No Christian doctrine is altered by either reading. Both affirm Jesus as divine and uniquely related to the Father. The earlier reading, if anything, makes an even stronger claim."
+        }
+      ],
+      "plain_english_summary": "There is a genuine variant here — but it goes in a surprising direction. The oldest manuscripts say 'only begotten God,' a stronger statement than the 'only begotten Son' found in later manuscripts. Modern Bibles reflect this older reading. Either way, the meaning is clear and no doctrine is threatened.",
+      "scholarly_commentary": {
+        "metzger_rating": "B — text reasonably certain",
+        "metzger_notes": "This is one of the most important textual decisions in the New Testament. The UBS committee rated μονογενὴς θεός ('only begotten God') with a {B} rating, indicating the text is 'reasonably certain.' The competing reading μονογενὴς υἱός ('only begotten Son') appears in later Byzantine manuscripts and in patristic citations by writers who may have harmonized with John 3:16. The committee argued: (1) μονογενὴς θεός is the harder reading — scribes were more likely to change 'God' to 'Son' than vice versa; (2) P66 and P75 (both ~175–200 AD) support θεός; (3) Codex Sinaiticus and Vaticanus support θεός; (4) Origen and other early Fathers cite θεός. Ehrman argues this was an orthodox corruption — scribes changing 'Son' to 'God' to combat Adoptionism. The committee disagreed, noting the manuscript weight strongly favors θεός.",
+        "ubs_confidence": "B",
+        "key_manuscripts": [
+          "P66 (~175 AD) — reads μονογενὴς θεός",
+          "P75 (~175–225 AD) — reads μονογενὴς θεός",
+          "Codex Sinaiticus (~360 AD) — reads μονογενὴς θεός",
+          "Codex Vaticanus (~325 AD) — reads μονογενὴς θεός",
+          "Byzantine majority — reads μονογενὴς υἱός"
+        ],
+        "modern_consensus": "NA28, UBS5, and all modern critical editions print μονογενὴς θεός. ESV, NASB, NIV, CSB all translate 'the only God' or 'God the One and Only.' Only older translations (KJV, NKJV) retain 'only begotten Son' based on the Byzantine text.",
+        "further_reading": "Metzger, Textual Commentary, pp. 169–170; Ehrman, Orthodox Corruption of Scripture, pp. 78–82; Hixson & Gurry, Myths and Mistakes, ch. 10."
+      }
+    },
+    "3:16": {
+      "reference": "John 3:16",
+      "chapter": 3,
+      "verse": 16,
+      "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Οὕτως γὰρ",
+          "english": "For so"
+        },
+        {
+          "greek": "ἠγάπησεν",
+          "english": "loved"
+        },
+        {
+          "greek": "ὁ Θεὸς",
+          "english": "God"
+        },
+        {
+          "greek": "τὸν κόσμον",
+          "english": "the world"
+        },
+        {
+          "greek": "ὥστε",
+          "english": "that"
+        },
+        {
+          "greek": "τὸν υἱὸν τὸν μονογενῆ",
+          "english": "his only begotten Son"
+        },
+        {
+          "greek": "ἔδωκεν",
+          "english": "he gave"
+        },
+        {
+          "greek": "ἵνα",
+          "english": "that"
+        },
+        {
+          "greek": "πᾶς ὁ πιστεύων",
+          "english": "whosoever believeth"
+        },
+        {
+          "greek": "εἰς αὐτὸν",
+          "english": "in him"
+        },
+        {
+          "greek": "μὴ ἀπόληται",
+          "english": "should not perish"
+        },
+        {
+          "greek": "ἀλλ' ἔχῃ",
+          "english": "but have"
+        },
+        {
+          "greek": "ζωὴν αἰώνιον",
+          "english": "everlasting life"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "John 3:16 is preserved in P66, one of the oldest Gospel manuscripts in existence."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on John"
+      },
+      "variants": [],
+      "plain_english_summary": "The most famous verse in the Bible is also one of the most stable. John 3:16 appears in every manuscript tradition without any meaningful variation. It has been attested since the 2nd century in both manuscripts and Church Father writings. There is nothing to dispute here.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 3:16 has no textual variants of significance. The verse is attested in P66 (the full opening section through chapter 14 survives) and in all subsequent manuscripts. The phrase οὕτως γὰρ ἠγάπησεν ὁ θεὸς τὸν κόσμον ('For God so loved the world') appears without variation across all traditions.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "Complete agreement across all manuscript families. NA28 prints no critical apparatus entry for this verse.",
+        "further_reading": "Metzger, Textual Commentary, 2nd ed. (no entry for 3:16)."
+      }
+    },
+    "5:4": {
+      "reference": "John 5:4",
+      "chapter": 5,
+      "verse": 4,
+      "text": "For an angel went down at a certain season into the pool, and troubled the water: whosoever then first after the troubling of the water stepped in was made whole of whatsoever disease he had.",
+      "confidence": "red",
+      "greek_manuscripts": 900,
+      "latin_manuscripts": 5000,
+      "syriac_manuscripts": 200,
+      "coptic_manuscripts": 80,
+      "armenian_manuscripts": 100,
+      "greek_words": [
+        {
+          "greek": "ἄγγελος γὰρ",
+          "english": "For an angel"
+        },
+        {
+          "greek": "κατὰ καιρὸν κατέβαινεν",
+          "english": "went down at a certain season"
+        },
+        {
+          "greek": "ἐν τῇ κολυμβήθρᾳ",
+          "english": "into the pool"
+        },
+        {
+          "greek": "καὶ ἐτάρασσεν τὸ ὕδωρ",
+          "english": "and troubled the water"
+        },
+        {
+          "greek": "ὁ οὖν πρῶτος ἐμβὰς",
+          "english": "whosoever then first stepped in"
+        },
+        {
+          "greek": "μετὰ τὴν ταραχὴν τοῦ ὕδατος",
+          "english": "after the troubling of the water"
+        },
+        {
+          "greek": "ὑγιὴς ἐγίνετο",
+          "english": "was made whole"
+        },
+        {
+          "greek": "ᾧ δήποτε κατείχετο νοσήματι",
+          "english": "of whatsoever disease he had"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Alexandrinus (A)",
+        "date": "~400–440 AD",
+        "location": "British Library, London",
+        "image_url": "https://www.bl.uk/manuscripts/Viewer.aspx?ref=royal_ms_1_d_viii",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Codex_alexandrinus_bible_london.jpg/1200px-Codex_alexandrinus_bible_london.jpg",
+        "description": "Codex Alexandrinus is among the earliest manuscripts to include John 5:4, but it is absent from P66, P75, Sinaiticus, and Vaticanus."
+      },
+      "earliest_church_father_citation": {
+        "author": "Tertullian",
+        "date": "~198 AD",
+        "work": "On Baptism",
+        "quote": "An angel used to stir the pool at Bethesda..."
+      },
+      "variants": [
+        {
+          "description": "John 5:3b–4 (the portion about the angel stirring the water) is absent from the oldest and most reliable manuscripts: P66, P75, Codex Sinaiticus, and Codex Vaticanus. It appears to be an early explanatory note added by scribes to explain the scene.",
+          "manuscripts_supporting": "Absent: P66, P75, Sinaiticus (א), Vaticanus (B). Present: Alexandrinus (A), Bezae (D), and later Byzantine manuscripts.",
+          "scholarly_consensus": "Virtually all modern translations bracket or footnote this passage. The NA28 and UBS5 critical editions bracket it. Scholars believe it is a scribal gloss that crept into the text.",
+          "doctrinal_impact": "No Christian doctrine depends on this verse. The healing still occurs in verse 5 onward — only the folk explanation for why people waited by the pool is missing from the earliest manuscripts."
+        }
+      ],
+      "bracketed": true,
+      "bracket_note": "This verse is absent from the oldest manuscripts (P66, P75, Sinaiticus, Vaticanus). Modern translations either omit it or place it in brackets. It appears to be an explanatory note added by early scribes.",
+      "plain_english_summary": "John 5:4 is almost certainly a scribal addition — an early reader's note explaining what was happening at the pool, which later got copied into the text itself. This is a well-understood phenomenon in ancient manuscripts. The healing miracle in the surrounding verses is not in dispute. No doctrine is affected.",
+      "scholarly_commentary": {
+        "metzger_rating": "The verse is a later addition — rated {C} for its inclusion in the base text of some traditions",
+        "metzger_notes": "Metzger's committee concluded that John 5:3b–4 (the angel stirring the water) is almost certainly a later scribal addition. The passage is absent from P66, P75, Codex Sinaiticus, and Codex Vaticanus — the four earliest and most important witnesses to John. It first appears in later manuscripts, with significant variation in wording even among the manuscripts that include it. The committee noted: (1) the vocabulary of v.4 contains several words not found elsewhere in John's Gospel; (2) the passage has the characteristics of a marginal gloss explaining the healing that became incorporated into the text; (3) many manuscripts that include it mark it with an asterisk or obelos, indicating ancient scribal awareness of its uncertain status. Modern translations universally bracket or footnote this verse.",
+        "ubs_confidence": "C — the verse is likely not original",
+        "key_manuscripts": [
+          "P66 — OMITS vv. 3b–4",
+          "P75 — OMITS vv. 3b–4",
+          "Codex Sinaiticus — OMITS vv. 3b–4",
+          "Codex Vaticanus — OMITS vv. 3b–4",
+          "Codex Alexandrinus (~430 AD) — INCLUDES with asterisk",
+          "Byzantine majority — INCLUDES"
+        ],
+        "modern_consensus": "All modern critical editions (NA28, UBS5, ECM) either omit or bracket John 5:3b–4. ESV, NIV, NASB place it in a footnote. Only the KJV and NKJV include it without notation.",
+        "further_reading": "Metzger, Textual Commentary, pp. 179–180; Ehrman, Misquoting Jesus, pp. 65–67."
+      }
+    },
+    "7:53": {
+      "reference": "John 7:53",
+      "chapter": 7,
+      "verse": 53,
+      "text": "And every man went unto his own house.",
+      "confidence": "red",
+      "greek_manuscripts": 900,
+      "latin_manuscripts": 5500,
+      "syriac_manuscripts": 150,
+      "coptic_manuscripts": 60,
+      "armenian_manuscripts": 90,
+      "greek_words": [
+        {
+          "greek": "Καὶ ἐπορεύθησαν",
+          "english": "And went"
+        },
+        {
+          "greek": "ἕκαστος",
+          "english": "every man"
+        },
+        {
+          "greek": "εἰς τὸν οἶκον αὐτοῦ",
+          "english": "unto his own house"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Bezae (D)",
+        "date": "~400 AD",
+        "location": "Cambridge University Library, UK",
+        "image_url": "https://cudl.lib.cam.ac.uk/view/MS-NN-00002-00041/1",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Codex_Bezae_01.JPG/1200px-Codex_Bezae_01.JPG",
+        "description": "Codex Bezae is one of the earliest manuscripts to include the Pericope Adulterae (John 7:53–8:11), though it is absent from much earlier manuscripts."
+      },
+      "earliest_church_father_citation": {
+        "author": "Didymus the Blind",
+        "date": "~380 AD",
+        "work": "Commentary on Ecclesiastes",
+        "quote": "We find somewhere... a story about an adulteress accused before the Lord."
+      },
+      "variants": [
+        {
+          "description": "John 7:53–8:11 (the 'Pericope Adulterae' or story of the woman caught in adultery) is absent from every early papyrus and the two most important 4th-century codices. Some manuscripts place this story after Luke 21:38 or at the end of John. Its style also differs noticeably from the surrounding chapters.",
+          "manuscripts_supporting": "Absent: P66, P75, P45, Sinaiticus (א), Vaticanus (B), and most early manuscripts. Present: Codex Bezae (D), later Byzantine manuscripts, and Old Latin versions.",
+          "scholarly_consensus": "The overwhelming consensus of textual scholars is that this passage was not original to John. The NA28, UBS5, and all modern critical editions bracket it. Jerome noted uncertainty about it in the 4th century. It likely records a genuine tradition about Jesus but was not part of the original text.",
+          "doctrinal_impact": "No Christian doctrine stands or falls on this passage. The teaching about forgiveness, mercy, and not judging others is abundantly supported throughout the Gospels. This story is beloved and probably records a real event — it simply was not original to this location in John."
+        }
+      ],
+      "bracketed": true,
+      "bracket_note": "John 7:53–8:11 (the woman caught in adultery) does not appear in the earliest manuscripts. This is why modern Bibles print it in brackets or with a footnote. It is almost certainly a later addition — though it may preserve a genuine historical tradition about Jesus.",
+      "plain_english_summary": "This is the most significant textual issue in the Gospel of John, and the site is honest about it. The story of the woman caught in adultery — one of the most beloved passages in all of Scripture — almost certainly was not part of John's original text. It appears in later manuscripts, in multiple different locations (sometimes at the end of John, sometimes after Luke 21), and its writing style differs from John's. Most scholars believe it preserves a real historical tradition but was added to the text later. Modern Bibles are honest about this with brackets. No Christian teaching depends on it.",
+      "scholarly_commentary": {
+        "metzger_rating": "The Pericope Adulterae (7:53–8:11) is not part of the original Gospel of John — rated accordingly",
+        "metzger_notes": "The Pericope Adulterae (the story of the woman caught in adultery) is one of the most studied passages in NT textual criticism. Metzger's committee was unequivocal: the passage 'is obviously not a part of the original text of the Fourth Gospel.' The evidence: (1) Absent from the earliest Greek manuscripts — P66, P75, Codex Sinaiticus, Codex Vaticanus, and most other early witnesses; (2) The Greek style and vocabulary differ markedly from John's Gospel; (3) Several manuscripts that include it mark it with asterisks or obeli; (4) Some manuscripts place it after John 7:36, others after 21:25, and some place it in the Gospel of Luke — suggesting scribes were uncertain where it belonged; (5) It first appears in Codex Bezae (~400 AD) and in the Latin tradition. The committee included it in brackets in the UBS text 'because of its evident antiquity and its importance in the Western tradition.'",
+        "ubs_confidence": "The passage is bracketed — not considered original",
+        "key_manuscripts": [
+          "P66 — OMITS entirely",
+          "P75 — OMITS entirely",
+          "Codex Sinaiticus — OMITS entirely",
+          "Codex Vaticanus — OMITS entirely",
+          "Codex Bezae (~400 AD) — INCLUDES (earliest Greek witness to include it)",
+          "Many minuscules — include it with asterisks/obeli marking uncertainty"
+        ],
+        "modern_consensus": "All modern critical editions bracket or footnote 7:53–8:11. Scholarly consensus holds it is not original to John but may preserve an authentic tradition about Jesus. Tommy Wasserman & Jennifer Knust (Princeton, 2019) provide the most comprehensive recent study.",
+        "further_reading": "Metzger, Textual Commentary, pp. 187–189; Wasserman & Knust, To Cast the First Stone (Princeton UP, 2019); Ehrman, Misquoting Jesus, pp. 63–65."
+      }
+    },
+    "8:1": {
+      "reference": "John 8:1",
+      "chapter": 8,
+      "verse": 1,
+      "text": "Jesus went unto the mount of Olives.",
+      "confidence": "red",
+      "greek_manuscripts": 900,
+      "latin_manuscripts": 5500,
+      "syriac_manuscripts": 150,
+      "coptic_manuscripts": 60,
+      "armenian_manuscripts": 90,
+      "greek_words": [
+        {
+          "greek": "Ἰησοῦς δὲ",
+          "english": "Jesus"
+        },
+        {
+          "greek": "ἐπορεύθη",
+          "english": "went"
+        },
+        {
+          "greek": "εἰς τὸ Ὄρος τῶν Ἐλαιῶν",
+          "english": "unto the mount of Olives"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "Codex Bezae (D)",
+        "date": "~400 AD",
+        "location": "Cambridge University Library, UK",
+        "image_url": "https://cudl.lib.cam.ac.uk/view/MS-NN-00002-00041/1",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Codex_Bezae_01.JPG/1200px-Codex_Bezae_01.JPG",
+        "description": "Part of the Pericope Adulterae (John 7:53–8:11), absent from all early papyri and the major 4th-century codices."
+      },
+      "earliest_church_father_citation": {
+        "author": "Didymus the Blind",
+        "date": "~380 AD",
+        "work": "Commentary on Ecclesiastes"
+      },
+      "variants": [],
+      "bracketed": true,
+      "bracket_note": "Part of the Pericope Adulterae (John 7:53–8:11). See the note at John 7:53 for full details.",
+      "plain_english_summary": "This verse is part of the Pericope Adulterae — the story of the woman caught in adultery. See John 7:53 for the full explanation. Both modern honesty and ancient manuscript evidence agree: this passage was added later. The site displays it exactly as modern scholarly Bibles do — in brackets, with a full explanation.",
+      "scholarly_commentary": {
+        "metzger_rating": "Part of Pericope Adulterae — same analysis as 7:53",
+        "metzger_notes": "John 8:1 begins the continuation of the Pericope Adulterae and shares the same textual history as 7:53. See the entry for John 7:53 for the complete Metzger analysis. The manuscript evidence for John 8:1–11 is identical to 7:53: absent from all early papyri and major 4th-century codices, first appearing in the Western text tradition (Codex Bezae) and Latin manuscripts.",
+        "ubs_confidence": "Passage is bracketed",
+        "key_manuscripts": [
+          "P66 — OMITS entirely",
+          "P75 — OMITS entirely",
+          "Codex Sinaiticus — OMITS entirely",
+          "Codex Vaticanus — OMITS entirely",
+          "Codex Bezae (~400 AD) — INCLUDES"
+        ],
+        "modern_consensus": "See John 7:53 entry. The entire pericope (7:53–8:11) is bracketed in all modern critical editions.",
+        "further_reading": "Metzger, Textual Commentary, pp. 187–189; Wasserman & Knust, To Cast the First Stone."
+      }
+    },
+    "8:12": {
+      "reference": "John 8:12",
+      "chapter": 8,
+      "verse": 12,
+      "text": "Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Πάλιν οὖν αὐτοῖς ἐλάλησεν",
+          "english": "Then spake again unto them"
+        },
+        {
+          "greek": "ὁ Ἰησοῦς λέγων",
+          "english": "Jesus, saying"
+        },
+        {
+          "greek": "Ἐγώ εἰμι",
+          "english": "I am"
+        },
+        {
+          "greek": "τὸ φῶς τοῦ κόσμου",
+          "english": "the light of the world"
+        },
+        {
+          "greek": "ὁ ἀκολουθῶν ἐμοὶ",
+          "english": "he that followeth me"
+        },
+        {
+          "greek": "οὐ μὴ περιπατήσῃ ἐν τῇ σκοτίᾳ",
+          "english": "shall not walk in darkness"
+        },
+        {
+          "greek": "ἀλλ' ἕξει",
+          "english": "but shall have"
+        },
+        {
+          "greek": "τὸ φῶς τῆς ζωῆς",
+          "english": "the light of life"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "John 8:12 is well-attested in P66."
+      },
+      "earliest_church_father_citation": {
+        "author": "Clement of Alexandria",
+        "date": "~195 AD",
+        "work": "Paedagogus"
+      },
+      "variants": [],
+      "plain_english_summary": "After the disputed Pericope Adulterae ends at 8:11, the gospel resumes with 8:12 — and the manuscript evidence is completely solid again. 'I am the light of the world' is attested in all manuscript traditions without meaningful variation.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 8:12 ('I am the light of the world') has no significant textual variants. The verse is well attested in all manuscript traditions. The verse appears in P66, in the great codices, and in all versions without meaningful variation.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "Uniform across all critical editions.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 8:12)."
+      }
+    },
+    "8:58": {
+      "reference": "John 8:58",
+      "chapter": 8,
+      "verse": 58,
+      "text": "Jesus said unto them, Verily, verily, I say unto you, Before Abraham was, I am.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "εἶπεν αὐτοῖς ὁ Ἰησοῦς",
+          "english": "Jesus said unto them"
+        },
+        {
+          "greek": "Ἀμὴν ἀμὴν λέγω ὑμῖν",
+          "english": "Verily, verily, I say unto you"
+        },
+        {
+          "greek": "πρὶν Ἀβραὰμ γενέσθαι",
+          "english": "Before Abraham was"
+        },
+        {
+          "greek": "ἐγὼ εἰμί",
+          "english": "I am"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "P66 contains John 8:58, the climactic 'I am' declaration that caused the crowd to take up stones."
+      },
+      "earliest_church_father_citation": {
+        "author": "Irenaeus of Lyon",
+        "date": "~180 AD",
+        "work": "Against Heresies"
+      },
+      "variants": [],
+      "plain_english_summary": "One of the most theologically charged statements in the Bible — Jesus' claim to pre-existence using the divine name 'I AM' — is also one of the most textually stable. It appears without variation in every manuscript tradition from the earliest papyri onward.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 8:58 ('Before Abraham was, I am') has no significant textual variants in the Greek manuscript tradition. The phrase ἐγώ εἰμι ('I am') appears uniformly in all manuscripts. The controversy surrounding this verse is entirely interpretive — whether the 'I am' is a divine self-identification echoing Exodus 3:14 — not textual. The reading is attested in P66, P75, and all major codices without variation.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD)",
+          "P75 (~175–225 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "All critical editions print ἐγώ εἰμι. The interpretive debate is theological, not textual.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 8:58)."
+      }
+    },
+    "11:25": {
+      "reference": "John 11:25",
+      "chapter": 11,
+      "verse": 25,
+      "text": "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "εἶπεν αὐτῇ ὁ Ἰησοῦς",
+          "english": "Jesus said unto her"
+        },
+        {
+          "greek": "Ἐγώ εἰμι",
+          "english": "I am"
+        },
+        {
+          "greek": "ἡ ἀνάστασις",
+          "english": "the resurrection"
+        },
+        {
+          "greek": "καὶ ἡ ζωή",
+          "english": "and the life"
+        },
+        {
+          "greek": "ὁ πιστεύων εἰς ἐμὲ",
+          "english": "he that believeth in me"
+        },
+        {
+          "greek": "κἂν ἀποθάνῃ",
+          "english": "though he were dead"
+        },
+        {
+          "greek": "ζήσεται",
+          "english": "yet shall he live"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P45 (Chester Beatty Papyrus I)",
+        "date": "~225–250 AD",
+        "location": "Chester Beatty Library, Dublin, Ireland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P45",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Papyrus_45_-_recto_%28John_10%29.jpg/1200px-Papyrus_45_-_recto_%28John_10%29.jpg",
+        "description": "P45 contains portions of John 11 and is one of the earliest witnesses to this chapter."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on John"
+      },
+      "variants": [],
+      "plain_english_summary": "Jesus' statement 'I am the resurrection and the life' is textually secure across all manuscript traditions. It appears consistently in Greek, Latin, Syriac, and Coptic manuscripts without meaningful variation.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 11:25 ('I am the resurrection and the life') contains no significant textual variants. The verse is attested in P45 (our earliest witness, ~225–250 AD), P66, and all subsequent manuscripts. Some late manuscripts omit 'and the life' but these are minority witnesses with no early support.",
+        "ubs_confidence": "N/A — no significant variant",
+        "key_manuscripts": [
+          "P45 (~225–250 AD)",
+          "P66 (~175 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "All critical editions include 'and the life.' The full reading is supported by overwhelming manuscript evidence.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 11:25)."
+      }
+    },
+    "11:35": {
+      "reference": "John 11:35",
+      "chapter": 11,
+      "verse": 35,
+      "text": "Jesus wept.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Ἐδάκρυσεν",
+          "english": "wept"
+        },
+        {
+          "greek": "ὁ Ἰησοῦς",
+          "english": "Jesus"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P45 (Chester Beatty Papyrus I)",
+        "date": "~225–250 AD",
+        "location": "Chester Beatty Library, Dublin, Ireland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P45",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Papyrus_45_-_recto_%28John_10%29.jpg/1200px-Papyrus_45_-_recto_%28John_10%29.jpg",
+        "description": "P45 is one of the earliest witnesses to John 11."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on John"
+      },
+      "variants": [],
+      "plain_english_summary": "The shortest verse in the English Bible — 'Jesus wept' — is also one of the most uniformly transmitted. Two Greek words (ἐδάκρυσεν ὁ Ἰησοῦς), found identically in every manuscript tradition.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 11:35 ('Jesus wept') is the shortest verse in the Bible and has no textual variants. It appears in P45 and all subsequent manuscripts without variation.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P45 (~225–250 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "Completely uniform across all manuscript traditions.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 11:35)."
+      }
+    },
+    "14:6": {
+      "reference": "John 14:6",
+      "chapter": 14,
+      "verse": 6,
+      "text": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Λέγει αὐτῷ ὁ Ἰησοῦς",
+          "english": "Jesus saith unto him"
+        },
+        {
+          "greek": "Ἐγώ εἰμι",
+          "english": "I am"
+        },
+        {
+          "greek": "ἡ ὁδὸς",
+          "english": "the way"
+        },
+        {
+          "greek": "καὶ",
+          "english": "and"
+        },
+        {
+          "greek": "ἡ ἀλήθεια",
+          "english": "the truth"
+        },
+        {
+          "greek": "καὶ",
+          "english": "and"
+        },
+        {
+          "greek": "ἡ ζωή",
+          "english": "the life"
+        },
+        {
+          "greek": "οὐδεὶς ἔρχεται",
+          "english": "no man cometh"
+        },
+        {
+          "greek": "πρὸς τὸν Πατέρα",
+          "english": "unto the Father"
+        },
+        {
+          "greek": "εἰ μὴ δι' ἐμοῦ",
+          "english": "but by me"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "P66 contains John 14 and is among the earliest attestations of this verse."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on John"
+      },
+      "variants": [],
+      "plain_english_summary": "John 14:6 — 'I am the way, the truth, and the life' — is one of the most-cited verses in Christian history and one of the most textually stable. All manuscript traditions agree on the wording. The debate over this verse has always been theological, never textual.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 14:6 ('I am the way, the truth, and the life') has no textual variants of any significance. The verse is attested in P66 (which covers John 14 extensively) and in all subsequent manuscripts. The text is uniform across all manuscript families.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "All critical editions agree. No manuscript tradition offers a different reading.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 14:6)."
+      }
+    },
+    "20:28": {
+      "reference": "John 20:28",
+      "chapter": 20,
+      "verse": 28,
+      "text": "And Thomas answered and said unto him, My Lord and my God.",
+      "confidence": "green",
+      "greek_manuscripts": 1650,
+      "latin_manuscripts": 8000,
+      "syriac_manuscripts": 350,
+      "coptic_manuscripts": 200,
+      "armenian_manuscripts": 150,
+      "greek_words": [
+        {
+          "greek": "Ἀπεκρίθη Θωμᾶς",
+          "english": "Thomas answered"
+        },
+        {
+          "greek": "καὶ εἶπεν αὐτῷ",
+          "english": "and said unto him"
+        },
+        {
+          "greek": "ὁ Κύριός μου",
+          "english": "My Lord"
+        },
+        {
+          "greek": "καὶ",
+          "english": "and"
+        },
+        {
+          "greek": "ὁ Θεός μου",
+          "english": "my God"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg"
+      },
+      "earliest_church_father_citation": {
+        "author": "Ignatius of Antioch",
+        "date": "~107 AD",
+        "work": "Letter to the Smyrneans",
+        "quote": "I give glory to Jesus Christ, the God who thus endued you with such wisdom."
+      },
+      "variants": [],
+      "plain_english_summary": "Thomas's declaration 'My Lord and my God' — the climactic confession of the Gospel — is textually unambiguous. Every manuscript tradition records it identically. This is the natural conclusion of John's Gospel, and it is supported by the full weight of manuscript evidence.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 20:28 ('My Lord and my God') — Thomas's confession — has no textual variants. The Greek ὁ κύριός μου καὶ ὁ θεός μου appears in all manuscripts without variation. This is remarkable given its theological weight as the most direct identification of Jesus as God in the Gospels. The absence of any scribal alteration suggests copyists transmitted it faithfully even when its implications were doctrinally significant.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "P66 (~175 AD, covers John 20)",
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)"
+        ],
+        "modern_consensus": "Completely uniform across all manuscript traditions. All critical editions and all translations agree.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 20:28 — text is undisputed)."
+      }
+    },
+    "21:25": {
+      "reference": "John 21:25",
+      "chapter": 21,
+      "verse": 25,
+      "text": "And there are also many other things which Jesus did, the which, if they should be written every one, I suppose that even the world itself could not contain the books that should be written. Amen.",
+      "confidence": "green",
+      "greek_manuscripts": 1648,
+      "latin_manuscripts": 7950,
+      "syriac_manuscripts": 348,
+      "coptic_manuscripts": 196,
+      "armenian_manuscripts": 147,
+      "greek_words": [
+        {
+          "greek": "Ἔστιν δὲ καὶ ἄλλα πολλὰ",
+          "english": "And there are also many other things"
+        },
+        {
+          "greek": "ἃ ἐποίησεν ὁ Ἰησοῦς",
+          "english": "which Jesus did"
+        },
+        {
+          "greek": "ἅτινα ἐὰν γράφηται καθ' ἕν",
+          "english": "the which, if they should be written every one"
+        },
+        {
+          "greek": "οὐδ' αὐτὸν οἶμαι",
+          "english": "I suppose that even"
+        },
+        {
+          "greek": "τὸν κόσμον χωρῆσαι",
+          "english": "the world itself could not contain"
+        },
+        {
+          "greek": "τὰ γραφόμενα βιβλία",
+          "english": "the books that should be written"
+        }
+      ],
+      "earliest_manuscript": {
+        "name": "P66 (Papyrus Bodmer II)",
+        "date": "~175 AD",
+        "location": "Bodmer Library, Geneva, Switzerland",
+        "image_url": "https://www.csntm.org/manuscript/View/GA_P66",
+        "image_direct_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg",
+        "description": "P66 contains the end of John's Gospel, including the closing doxology of chapter 21."
+      },
+      "earliest_church_father_citation": {
+        "author": "Origen",
+        "date": "~230 AD",
+        "work": "Commentary on John"
+      },
+      "variants": [],
+      "plain_english_summary": "The final verse of John is well-attested across all manuscript traditions. Some scholars note that Chapter 21 may have been added as an appendix to the original Gospel (which seemed to conclude at 20:30–31), but all manuscripts include it and there is no textual evidence for a version of John that ended at chapter 20.",
+      "scholarly_commentary": {
+        "metzger_rating": "Not in apparatus — text is uniform",
+        "metzger_notes": "John 21:25 (the hyperbolic closing — 'the world itself could not contain the books') has no textual variants. Some early commentators questioned whether chapter 21 as a whole was an appendix added by a later editor, but this is a canonical/literary question, not a textual one. The manuscript tradition includes ch. 21 uniformly.",
+        "ubs_confidence": "N/A — no variant",
+        "key_manuscripts": [
+          "Codex Sinaiticus (~360 AD)",
+          "Codex Vaticanus (~325 AD)",
+          "Codex Alexandrinus (~430 AD)"
+        ],
+        "modern_consensus": "All critical editions include John 21. The appendix theory is a literary-critical hypothesis without manuscript support for its exclusion.",
+        "further_reading": "Metzger, Textual Commentary (no entry for 21:25)."
+      }
+    }
+  }
+}
