@@ -13,8 +13,7 @@
     "complete_book": false,
     "john_ranges": [[1,23,1,31],[1,33,1,40],[16,14,16,30],[20,11,20,17],[20,19,20,20],[20,22,20,25]],
     "repository": "Cairo, Egyptian Museum",
-    "origin": "Egypt",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/P5verso.jpg/640px-P5verso.jpg"
+    "origin": "Egypt"
   },
   {
     "id": "p22",
@@ -129,7 +128,7 @@
     "repository": "Manchester, John Rylands Library",
     "origin": "Egypt",
     "significance": "Earliest known New Testament manuscript fragment",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/P52_recto.jpg/640px-P52_recto.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/P52_recto.jpg"
   },
   {
     "id": "p59",
@@ -195,7 +194,7 @@
     "repository": "Cologny, Bodmer Library",
     "origin": "Egypt",
     "significance": "One of the two oldest substantial John manuscripts",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/640px-Papyrus_66.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Papyrus_66_%28GA%29.jpg/500px-Papyrus_66_%28GA%29.jpg",
     "institution_url": "https://www.bodmer.ch/en/collections/library/"
   },
   {
@@ -214,7 +213,7 @@
     "repository": "Vatican, Biblioteca Apostolica",
     "origin": "Egypt",
     "significance": "Co-oldest with P66 for John's opening chapters; closely related to Codex Vaticanus",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Papyrus_75_-_Folio_3r.jpg/640px-Papyrus_75_-_Folio_3r.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Papyrus_75a.gif/500px-Papyrus_75a.gif",
     "institution_url": "https://digi.vatlib.it/mss/Vat.gr.1209"
   },
   {
@@ -427,7 +426,7 @@
     "significance": "Most important complete New Testament manuscript",
     "text_type": "Alexandrian",
     "ga_number": "01",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Codex_Sinaiticus_Matthew_6_28-7_22.JPG/640px-Codex_Sinaiticus_Matthew_6_28-7_22.JPG",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Codex_Sinaiticus_John_21%2C7.JPG",
     "institution_url": "https://codexsinaiticus.org/en/manuscript.aspx"
   },
   {
@@ -447,7 +446,7 @@
     "significance": "Oldest nearly-complete New Testament codex",
     "text_type": "Alexandrian",
     "ga_number": "02",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Codex_Vaticanus_B%2C_2Thess._3%2C11-18%2C_Hebr._1%2C1-2%2C2.jpg/640px-Codex_Vaticanus_B%2C_2Thess._3%2C11-18%2C_Hebr._1%2C1-2%2C2.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Codex_Vaticanus_B%2C_2Thess._3%2C11-18%2C_Hebr._1%2C1-2%2C2.jpg/500px-Codex_Vaticanus_B%2C_2Thess._3%2C11-18%2C_Hebr._1%2C1-2%2C2.jpg",
     "institution_url": "https://digi.vatlib.it/mss/Vat.gr.1209"
   },
   {
@@ -466,7 +465,7 @@
     "origin": "Alexandria, Egypt",
     "text_type": "Byzantine (Gospels), Alexandrian (rest)",
     "ga_number": "03",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Codex_Alexandrinus_f41v.jpg/640px-Codex_Alexandrinus_f41v.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Codex_Alexandrinus_J_1%2C1-7.PNG/500px-Codex_Alexandrinus_J_1%2C1-7.PNG",
     "institution_url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_VIII"
   },
   {
@@ -504,7 +503,7 @@
     "significance": "Bilingual Greek-Latin; Western text with many unique readings",
     "text_type": "Western",
     "ga_number": "05",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Codex_Bezae_recto.jpg/640px-Codex_Bezae_recto.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Codex_Bezae_0205.JPG/500px-Codex_Bezae_0205.JPG",
     "institution_url": "https://cudl.lib.cam.ac.uk/view/MS-NN-00002-00041/1"
   },
   {
@@ -523,7 +522,7 @@
     "origin": "Egypt",
     "text_type": "mixed",
     "ga_number": "032",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Codex_Washingtonianus.jpg/640px-Codex_Washingtonianus.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Codex_Washingtonianus_032.jpg/500px-Codex_Washingtonianus_032.jpg"
   },
   {
     "id": "regius",
