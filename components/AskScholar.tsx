@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { BookOpen, Send, X, RotateCcw } from 'lucide-react'
+import type { VerseData } from '@/lib/types'
 
 // ---------------------------------------------------------------------------
 // Knowledge base — rule-based responses (no API key needed)
@@ -410,7 +411,7 @@ interface Message {
 // Main component
 // ---------------------------------------------------------------------------
 
-export default function AskScholar() {
+export default function AskScholar({ verseData }: { verseData?: VerseData }) {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -447,7 +448,7 @@ export default function AskScholar() {
         const res = await fetch('/api/ask-scholar', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question: trimmed }),
+          body: JSON.stringify({ question: trimmed, verseData }),
         })
         if (!res.ok || !res.body) throw new Error('API error')
         const reader = res.body.getReader()

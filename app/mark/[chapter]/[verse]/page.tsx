@@ -167,7 +167,7 @@ export default async function MarkVersePage({ params }: Props) {
       </div>
 
       {/* Ask a Scholar */}
-      <AskScholar />
+      <AskScholar verseData={verseData} />
 
       {/* Total count callout */}
       <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-center">
