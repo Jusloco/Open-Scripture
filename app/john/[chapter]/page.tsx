@@ -94,7 +94,7 @@ export default async function ChapterPage({ params }: Props) {
                     )}
                   </div>
                 ) : (
-                  <p className="text-sm text-zinc-400">John {chapterNum}:{verseNum}</p>
+                  <p className="text-sm text-zinc-400 italic">Attested in 5,800+ Greek manuscripts · click for details</p>
                 )}
               </div>
 

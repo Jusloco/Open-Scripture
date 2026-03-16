@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NextImage from 'next/image'
 import { getBookData } from '@/lib/data'
 import type { Metadata } from 'next'
 
@@ -34,6 +35,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'John Rylands Library, Manchester, UK',
     material: 'Papyrus',
     language: 'Greek',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/32/P52_recto.jpg',
     institutionUrl: 'https://www.library.manchester.ac.uk/rylands/',
     description: 'A business-card-sized fragment containing John 18:31–33 on one side and 18:37–38 on the other. The oldest known New Testament manuscript in existence.',
     johnnCoverage: 'John 18:31–33, 37–38',
@@ -49,7 +51,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'Bodmer Library, Cologny, Switzerland',
     material: 'Papyrus',
     language: 'Greek',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Papyrus_66.jpg/1200px-Papyrus_66.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Papyrus_66_%28GA%29.jpg/500px-Papyrus_66_%28GA%29.jpg',
     institutionUrl: 'https://www.fondationbodmer.ch/',
     description: 'One of the most important and best-preserved papyri of the New Testament, containing most of the Gospel of John. Written in a clear scribal hand with occasional corrections.',
     johnnCoverage: 'John 1:1–6:11, 6:35b–14:26, fragments of 14–21',
@@ -65,6 +67,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'Vatican Library, Rome, Italy',
     material: 'Papyrus',
     language: 'Greek',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Papyrus_75a.gif/500px-Papyrus_75a.gif',
     institutionUrl: 'https://www.vaticanlibrary.va/',
     description: 'The most carefully copied of the early papyri, containing Luke and John. Its text is remarkably close to Codex Vaticanus, suggesting a careful scribal tradition.',
     johnnCoverage: 'John 1:1–15:8',
@@ -95,6 +98,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'Vatican Apostolic Library, Vatican City',
     material: 'Vellum',
     language: 'Greek',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Codex_Vaticanus_B%2C_2Thess._3%2C11-18%2C_Hebr._1%2C1-2%2C2.jpg/500px-Codex_Vaticanus_B%2C_2Thess._3%2C11-18%2C_Hebr._1%2C1-2%2C2.jpg',
     institutionUrl: 'https://www.vaticanlibrary.va/',
     description: 'One of the two most authoritative manuscripts in New Testament textual criticism. Written on fine vellum in a careful uncial hand with three columns per page. Long held as a benchmark text.',
     johnnCoverage: 'Complete Gospel of John',
@@ -110,7 +114,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'British Library, London (majority); St. Catherine\'s Monastery, Sinai; Leipzig; St. Petersburg',
     material: 'Vellum',
     language: 'Greek',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Codex_Sinaiticus_Matthew_6%2C4-32.JPG/1200px-Codex_Sinaiticus_Matthew_6%2C4-32.JPG',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Codex_Sinaiticus_John_21%2C7.JPG',
     institutionUrl: 'https://codexsinaiticus.org',
     description: 'The oldest complete New Testament manuscript in existence, discovered by Constantin von Tischendorf at St. Catherine\'s Monastery in 1844. Fully digitized and freely available at codexsinaiticus.org.',
     johnnCoverage: 'Complete Gospel of John',
@@ -126,6 +130,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'British Library, London, UK',
     material: 'Vellum',
     language: 'Greek',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Codex_Alexandrinus_J_1%2C1-7.PNG/500px-Codex_Alexandrinus_J_1%2C1-7.PNG',
     institutionUrl: 'https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Royal_MS_1_D_VIII',
     description: 'Donated to the King of England in 1627, one of the first great biblical manuscripts to reach the West. Contains almost the entire Bible in Greek. A Byzantine-type text for the Gospels.',
     johnnCoverage: 'Complete Gospel of John (with some lacunae)',
@@ -141,6 +146,7 @@ const MANUSCRIPTS: ManuscriptProfile[] = [
     location: 'Cambridge University Library, Cambridge, UK',
     material: 'Vellum',
     language: 'Greek and Latin (bilingual)',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Codex_Bezae_0205.JPG/500px-Codex_Bezae_0205.JPG',
     institutionUrl: 'https://cudl.lib.cam.ac.uk/view/MS-NN-00002-00041/1',
     description: 'A bilingual codex in Greek and Latin, with a dramatically distinct text that is often longer than other manuscripts. Its unique readings make it a perennial subject of scholarly debate.',
     johnnCoverage: 'Complete Gospel of John (with unique variant readings)',
@@ -197,6 +203,19 @@ export default function ManuscriptsPage() {
               key={ms.id}
               className={`rounded-xl border ${styles.border} bg-white overflow-hidden`}
             >
+              {ms.imageUrl && (
+                <div className="relative h-40 w-full bg-zinc-100 overflow-hidden">
+                  <NextImage
+                    src={ms.imageUrl}
+                    alt={ms.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 800px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40" />
+                  <span className="absolute bottom-2 left-3 text-white/80 text-xs font-mono">{ms.siglum} · {ms.date}</span>
+                </div>
+              )}
               <div className="p-5">
                 <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                   <div>
