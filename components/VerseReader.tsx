@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import NextImage from 'next/image'
 import { WordPair } from '@/lib/types'
 import { ManuscriptWitness } from '@/lib/manuscripts'
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
@@ -74,18 +73,18 @@ export function VerseReader({ wordPairs, imagedManuscripts, fallbackManuscript }
         </div>
 
         {/* Image */}
-        <div className="relative bg-zinc-950 rounded-lg overflow-hidden min-h-52 mb-4 border border-zinc-800">
+        <div className="relative bg-zinc-950 rounded-lg overflow-hidden h-52 mb-4 border border-zinc-800">
           {imageUrl && !imgFailed ? (
-            <NextImage
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
               src={imageUrl}
               alt={msName}
-              fill
-              className="object-contain"
+              referrerPolicy="no-referrer"
+              className="absolute inset-0 w-full h-full object-contain"
               onError={() => setImgFailed(true)}
-              sizes="(max-width: 768px) 100vw, 40vw"
             />
           ) : (
-            <div className="flex flex-col items-center justify-center gap-2 text-zinc-600 min-h-52">
+            <div className="flex flex-col items-center justify-center gap-2 text-zinc-600 h-52">
               <span className="text-5xl">📜</span>
               <span className="text-xs">Image not available</span>
             </div>

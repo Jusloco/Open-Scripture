@@ -43,7 +43,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/90 backdrop-blur" ref={menuRef}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-amber-700 text-xl font-bold tracking-tight">Open</span>
+          <span className="text-gold-400 text-xl font-bold tracking-tight">Open</span>
           <span className="text-zinc-500 text-xl font-bold tracking-tight">Scripture</span>
         </Link>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
               className={cn(
                 'text-sm transition-colors',
                 pathname.startsWith(link.href)
-                  ? 'text-amber-700'
+                  ? 'text-gold-400'
                   : 'text-zinc-500 hover:text-zinc-900'
               )}
             >
@@ -71,7 +71,7 @@ export default function Navbar() {
             href="https://github.com/sponsors"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md border border-amber-700/30 px-3 py-1.5 text-xs text-amber-700 hover:bg-amber-700/10 transition-colors"
+            className="rounded-md border border-gold-400/30 px-3 py-1.5 text-xs text-gold-400 hover:bg-gold-400/10 transition-colors"
           >
             Support
           </a>
@@ -103,7 +103,7 @@ export default function Navbar() {
               className={cn(
                 'rounded-md px-3 py-2.5 text-sm transition-colors',
                 pathname.startsWith(link.href)
-                  ? 'text-amber-700 bg-amber-700/5'
+                  ? 'text-gold-400 bg-gold-400/5'
                   : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100'
               )}
             >
@@ -116,7 +116,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-md px-3 py-2.5 text-sm text-amber-700 hover:bg-amber-700/10 transition-colors"
+              className="block rounded-md px-3 py-2.5 text-sm text-gold-400 hover:bg-gold-400/10 transition-colors"
             >
               Support this project
             </a>

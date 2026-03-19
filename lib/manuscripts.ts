@@ -58,3 +58,10 @@ export function groupWitnessesByType(witnesses: ManuscriptWitness[]) {
 export function getImagedManuscripts(witnesses: ManuscriptWitness[]): ManuscriptWitness[] {
   return witnesses.filter(m => m.image_url).sort((a, b) => a.date_year - b.date_year)
 }
+
+export function getChapterManuscript(book: string, chapter: number): ManuscriptWitness | null {
+  const candidates = getWitnessesForVerse(book, chapter, 1)
+    .filter(m => m.image_url && (m.type === 'papyrus' || m.type === 'uncial'))
+    .sort((a, b) => a.date_year - b.date_year)
+  return candidates[0] || null
+}
