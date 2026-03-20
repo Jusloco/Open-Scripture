@@ -21,6 +21,8 @@ export interface ManuscriptWitness {
   institution_url?: string
   text_type?: string
   ga_number?: string
+  lat?: number
+  lng?: number
 }
 
 const witnesses = witnessData as ManuscriptWitness[]
@@ -57,6 +59,10 @@ export function groupWitnessesByType(witnesses: ManuscriptWitness[]) {
 
 export function getImagedManuscripts(witnesses: ManuscriptWitness[]): ManuscriptWitness[] {
   return witnesses.filter(m => m.image_url).sort((a, b) => a.date_year - b.date_year)
+}
+
+export function getAllManuscripts(): ManuscriptWitness[] {
+  return witnesses
 }
 
 export function getChapterManuscript(book: string, chapter: number): ManuscriptWitness | null {

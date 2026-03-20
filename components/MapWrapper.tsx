@@ -3,21 +3,23 @@
 import { useState } from 'react'
 import ManuscriptMap from './ManuscriptMap'
 import TimelineSlider from './TimelineSlider'
-import manuscriptLocations from '@/data/manuscript-locations.json'
+import { getAllManuscripts } from '@/lib/manuscripts'
+
+const allWitnesses = getAllManuscripts().filter(m => m.lat != null && m.lng != null)
 
 export default function MapWrapper() {
   const [maxDate, setMaxDate] = useState(600)
 
-  const visibleCount = manuscriptLocations.filter(m => m.date <= maxDate).length
+  const visibleCount = allWitnesses.filter(m => m.date_year <= maxDate).length
 
   return (
     <div className="space-y-4">
-      <ManuscriptMap manuscripts={manuscriptLocations} maxDate={maxDate} />
+      <ManuscriptMap manuscripts={allWitnesses} maxDate={maxDate} />
       <TimelineSlider
         maxDate={maxDate}
         onChange={setMaxDate}
         totalVisible={visibleCount}
-        totalCount={manuscriptLocations.length}
+        totalCount={allWitnesses.length}
       />
     </div>
   )

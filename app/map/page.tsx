@@ -1,31 +1,50 @@
 import type { Metadata } from 'next'
 import MapPageClient from '@/components/MapPageClient'
-import manuscriptLocations from '@/data/manuscript-locations.json'
+import { getAllManuscripts } from '@/lib/manuscripts'
 
 export const metadata: Metadata = {
   title: 'Manuscript Map — OpenScripture',
   description: 'Discover where the New Testament manuscripts were found — an interactive map spanning the 2nd through 6th centuries, from Egypt to Rome to Syria.',
 }
 
-// Compute stats from data (server-side)
-const totalManuscripts = manuscriptLocations.length
+// Compute stats from witness data (server-side)
+const allWitnesses = getAllManuscripts()
+const mappedWitnesses = allWitnesses.filter(m => m.lat != null && m.lng != null)
 
-const centuries = new Set(manuscriptLocations.map(m => m.century)).size
+const totalManuscripts = mappedWitnesses.length
+
+const centuryNumMap: Record<string, number> = {
+  '2nd': 2, '3rd': 3, '4th': 4, '5th': 5, '6th': 6,
+  '7th': 7, '8th': 8, '9th': 9, '10th': 10,
+}
+function centuryNum(c: string): number {
+  for (const key of Object.keys(centuryNumMap)) {
+    if (c.startsWith(key)) return centuryNumMap[key]
+  }
+  return 6
+}
+
+const centurySet = new Set(mappedWitnesses.map(m => centuryNum(m.century)))
+const centuries = centurySet.size
 
 const regions = new Set(
-  manuscriptLocations.map(m => {
-    if (m.location.includes('Egypt') || m.location.includes('Sinai')) return 'Egypt/Sinai'
-    if (m.location.includes('Vatican') || m.location.includes('Rome')) return 'Italy'
-    if (m.location.includes('Syria') || m.location.includes('Antioch')) return 'Syria'
-    if (m.location.includes('Turkey') || m.location.includes('Asia Minor') || m.location.includes('Ephesus')) return 'Turkey'
-    if (m.location.includes('Gaul') || m.location.includes('Africa')) return 'N. Africa'
+  mappedWitnesses.map(m => {
+    const r = m.repository
+    if (r.includes('Egypt') || r.includes('Cairo') || r.includes('Oxford') || r.includes('Manchester') || r.includes('Cologny') || r.includes('Bodmer')) return 'Egypt/Europe'
+    if (r.includes('Vatican') || r.includes('Rome') || r.includes('Florence') || r.includes('Milan') || r.includes('Venice') || r.includes('Grottaferrata')) return 'Italy'
+    if (r.includes('Sinai') || r.includes('Jerusalem')) return 'Middle East'
+    if (r.includes('Paris') || r.includes('Ghent') || r.includes('Barcelona') || r.includes('Utrecht') || r.includes('Basel') || r.includes('Wolfenbüttel') || r.includes('Hamburg') || r.includes('Munich') || r.includes('St. Gallen')) return 'Western Europe'
+    if (r.includes('London') || r.includes('Cambridge') || r.includes('British Library') || r.includes('Leicester') || r.includes('Glasgow')) return 'Britain'
+    if (r.includes('St. Petersburg') || r.includes('Moscow') || r.includes('Tbilisi') || r.includes('Athens') || r.includes('Mt. Athos') || r.includes('Sparta')) return 'Eastern Europe'
+    if (r.includes('New York') || r.includes('Washington') || r.includes('Chicago') || r.includes('Princeton') || r.includes('Ann Arbor') || r.includes('Berkeley')) return 'North America'
     return 'Other'
   })
 )
 const countries = regions.size
 
-const centuryCounts = manuscriptLocations.reduce<Record<number, number>>((acc, m) => {
-  acc[m.century] = (acc[m.century] || 0) + 1
+const centuryCounts = mappedWitnesses.reduce<Record<number, number>>((acc, m) => {
+  const c = centuryNum(m.century)
+  acc[c] = (acc[c] || 0) + 1
   return acc
 }, {})
 
@@ -39,18 +58,18 @@ const centuryConfig = [
 
 const keySites = [
   {
-    name: 'Egypt',
+    name: 'Egypt (origin)',
     icon: '🏺',
     description: 'The dominant provenance for early NT manuscripts. Oxyrhynchus, the Fayum, and the Dishna find yielded P52, P66, P75, P45, and dozens more.',
-    count: manuscriptLocations.filter(m => m.location.includes('Egypt')).length,
+    count: allWitnesses.filter(m => m.origin?.includes('Egypt')).length,
     color: 'border-amber-700/20 bg-amber-700/5',
     labelColor: 'text-amber-700',
   },
   {
-    name: 'Sinai Peninsula',
+    name: 'Sinai / Jerusalem',
     icon: '⛰️',
-    description: "St. Catherine's Monastery, founded in 565 AD, preserved Codex Sinaiticus — the oldest complete New Testament — until Tischendorf discovered it in 1844.",
-    count: manuscriptLocations.filter(m => m.location.includes('Sinai')).length,
+    description: "St. Catherine's Monastery preserved Codex Sinaiticus until Tischendorf discovered it in 1844. The Greek Orthodox Patriarchate in Jerusalem holds additional minuscules.",
+    count: mappedWitnesses.filter(m => m.repository.includes('Sinai') || m.repository.includes('Jerusalem')).length,
     color: 'border-rose-200 bg-rose-50',
     labelColor: 'text-rose-700',
   },
@@ -58,15 +77,15 @@ const keySites = [
     name: 'Rome / Vatican',
     icon: '🏛️',
     description: 'Vatican City holds Codex Vaticanus, one of the two most authoritative NT manuscripts, catalogued in the Vatican library since at least 1475.',
-    count: manuscriptLocations.filter(m => m.location.includes('Rome') || m.location.includes('Vatican')).length,
+    count: mappedWitnesses.filter(m => m.repository.includes('Vatican') || m.repository.includes('Rome')).length,
     color: 'border-zinc-300 bg-zinc-100/50',
     labelColor: 'text-zinc-700',
   },
   {
-    name: 'Syria',
-    icon: '🏙️',
-    description: 'Dura-Europos preserved the only Greek Diatessaron fragment — a Gospel harmony — sealed under rubble before the city fell in 256 AD. Antioch produced the Peshitta.',
-    count: manuscriptLocations.filter(m => m.location.includes('Syria') || m.location.includes('Antioch')).length,
+    name: 'Mt. Athos',
+    icon: '🏔️',
+    description: 'The monastic peninsula in northern Greece preserves dozens of Byzantine minuscules and lectionaries in its ancient monasteries, including Great Lavra and Vatopedi.',
+    count: mappedWitnesses.filter(m => m.repository.includes('Mt. Athos')).length,
     color: 'border-orange-200 bg-orange-50',
     labelColor: 'text-orange-700',
   },

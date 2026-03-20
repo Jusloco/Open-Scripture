@@ -42,6 +42,8 @@ export function ChapterReaderLayout({
   book,
 }: Props) {
   const [viewMode, setViewMode] = useState<ViewMode>('split')
+  const [activeVerse, setActiveVerse] = useState<number | null>(null)
+  const [activeWord, setActiveWord] = useState<number | null>(null)
 
   const prevChapter = chapterNum > 1 ? chapterNum - 1 : null
   const nextChapter = chapterNum < totalChapters ? chapterNum + 1 : null
@@ -50,6 +52,21 @@ export function ChapterReaderLayout({
 
   const showImage = viewMode !== 'text'
   const showText = viewMode !== 'image'
+
+  function handleVerseClick(verseNum: number) {
+    if (activeVerse === verseNum) {
+      setActiveVerse(null)
+      setActiveWord(null)
+    } else {
+      setActiveVerse(verseNum)
+      setActiveWord(null)
+    }
+  }
+
+  function handleWordClick(e: React.MouseEvent, wordIndex: number) {
+    e.stopPropagation()
+    setActiveWord(prev => (prev === wordIndex ? null : wordIndex))
+  }
 
   return (
     <div className="flex flex-col h-full">
@@ -158,6 +175,8 @@ export function ChapterReaderLayout({
               <ManuscriptViewer
                 imageUrl={manuscript.image_url}
                 manuscriptName={`${manuscript.name} · ${manuscript.date_label}`}
+                activeVerse={activeVerse ?? undefined}
+                totalVerses={chapterData.verse_count}
               />
             ) : (
               <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-zinc-600">
@@ -194,46 +213,133 @@ export function ChapterReaderLayout({
                 {allVerseNums.map(verseNum => {
                   const isKey = keyVerseNums.has(verseNum)
                   const verseData = keyVerses.find(v => v.verse === verseNum)
+                  const isActive = activeVerse === verseNum
+                  const hasWords = isKey && verseData?.greek_words && verseData.greek_words.length > 0
 
                   return (
-                    <Link
-                      key={verseNum}
-                      href={`${bookPath}/${chapterNum}/${verseNum}`}
-                      className={`group flex items-start gap-3 rounded-lg px-3 py-2.5 transition-all ${
-                        verseData?.bracketed
-                          ? 'hover:bg-red-50 border border-transparent hover:border-red-100'
-                          : isKey
-                          ? 'hover:bg-zinc-50 border border-transparent hover:border-zinc-200'
-                          : 'hover:bg-zinc-50/60'
-                      }`}
-                    >
-                      <span className={`text-xs font-mono pt-0.5 w-6 text-right shrink-0 ${
-                        isKey ? 'text-gold-400 font-semibold' : 'text-zinc-400'
-                      }`}>
-                        {verseNum}
-                      </span>
-                      <div className="flex-1 min-w-0">
-                        {isKey && verseData ? (
-                          <div>
-                            {verseData.text && (
-                              <p className="text-sm text-zinc-700 leading-relaxed line-clamp-2">
-                                {verseData.text}
-                              </p>
-                            )}
-                            <div className="flex items-center gap-2 mt-1">
-                              <ConfidenceBadge level={verseData.confidence} size="sm" />
-                              <span className="text-xs text-gold-500/60 group-hover:text-gold-400 transition-colors">
-                                Read verse →
-                              </span>
+                    <div key={verseNum}>
+                      {/* Verse row — clickable */}
+                      <div
+                        onClick={() => handleVerseClick(verseNum)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={e => e.key === 'Enter' && handleVerseClick(verseNum)}
+                        className={`group flex items-start gap-3 rounded-lg px-3 py-2.5 cursor-pointer transition-all select-none ${
+                          isActive
+                            ? verseData?.bracketed
+                              ? 'bg-red-50 border border-red-200'
+                              : isKey
+                              ? 'bg-amber-50 border border-amber-200'
+                              : 'bg-zinc-100 border border-zinc-300'
+                            : verseData?.bracketed
+                            ? 'hover:bg-red-50 border border-transparent hover:border-red-100'
+                            : isKey
+                            ? 'hover:bg-zinc-50 border border-transparent hover:border-zinc-200'
+                            : 'hover:bg-zinc-50/60 border border-transparent'
+                        }`}
+                      >
+                        <span className={`text-xs font-mono pt-0.5 w-6 text-right shrink-0 ${
+                          isKey ? 'text-amber-600 font-semibold' : 'text-zinc-400'
+                        }`}>
+                          {verseNum}
+                        </span>
+                        <div className="flex-1 min-w-0">
+                          {isKey && verseData ? (
+                            <div>
+                              {verseData.text && (
+                                <p className={`text-sm text-zinc-700 leading-relaxed ${isActive ? '' : 'line-clamp-2'}`}>
+                                  {verseData.text}
+                                </p>
+                              )}
+                              <div className="flex items-center gap-2 mt-1">
+                                <ConfidenceBadge level={verseData.confidence} size="sm" />
+                                {!isActive && (
+                                  <span className="text-xs text-amber-500/60 group-hover:text-amber-400 transition-colors">
+                                    Click to explore →
+                                  </span>
+                                )}
+                              </div>
                             </div>
-                          </div>
-                        ) : (
-                          <p className="text-xs text-zinc-400 italic pt-0.5">
-                            Attested in 5,800+ Greek manuscripts
-                          </p>
-                        )}
+                          ) : (
+                            <p className="text-xs text-zinc-400 italic pt-0.5">
+                              Attested in 5,800+ Greek manuscripts
+                            </p>
+                          )}
+                        </div>
                       </div>
-                    </Link>
+
+                      {/* Expanded content — shown only when active */}
+                      {isActive && (
+                        <div className="mx-3 mb-2 rounded-b-lg border border-t-0 border-amber-200 bg-amber-50/60 px-3 py-3">
+                          {/* Greek word chips */}
+                          {hasWords && verseData?.greek_words && (
+                            <div className="mb-3">
+                              <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-2">
+                                Greek word-by-word
+                              </p>
+                              <div className="flex flex-wrap gap-1.5">
+                                {verseData.greek_words.map((wp, idx) => (
+                                  <button
+                                    key={idx}
+                                    onClick={e => handleWordClick(e, idx)}
+                                    className={`px-2 py-1 rounded-md text-sm font-medium transition-all ${
+                                      activeWord === idx
+                                        ? 'bg-amber-500 text-white shadow-sm'
+                                        : 'bg-white border border-amber-200 text-zinc-700 hover:bg-amber-100 hover:border-amber-300'
+                                    }`}
+                                  >
+                                    {wp.greek}
+                                  </button>
+                                ))}
+                              </div>
+
+                              {/* Translation callout */}
+                              {activeWord !== null && verseData.greek_words[activeWord] && (
+                                <div className="mt-2 inline-flex items-center gap-2 bg-white border border-amber-300 rounded-lg px-3 py-2 shadow-sm">
+                                  <span className="text-sm font-semibold text-amber-700">
+                                    {verseData.greek_words[activeWord].greek}
+                                  </span>
+                                  <span className="text-zinc-400">=</span>
+                                  <span className="text-sm text-zinc-700 italic">
+                                    &ldquo;{verseData.greek_words[activeWord].english}&rdquo;
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {/* Non-key verse expanded state */}
+                          {!isKey && (
+                            <p className="text-xs text-zinc-500 mb-2">
+                              This verse is attested in virtually all 5,800+ Greek manuscripts with no significant variants.
+                            </p>
+                          )}
+
+                          {/* Actions row */}
+                          <div className="flex items-center gap-3 pt-1 border-t border-amber-200/60">
+                            {isKey ? (
+                              <Link
+                                href={`${bookPath}/${chapterNum}/${verseNum}`}
+                                onClick={e => e.stopPropagation()}
+                                className="text-xs text-amber-700 hover:text-amber-600 transition-colors font-medium"
+                              >
+                                Full verse detail →
+                              </Link>
+                            ) : (
+                              <span className="text-xs text-zinc-400">
+                                Verse {verseNum} · no detailed record available
+                              </span>
+                            )}
+                            <button
+                              onClick={e => { e.stopPropagation(); setActiveVerse(null); setActiveWord(null) }}
+                              className="ml-auto text-xs text-zinc-400 hover:text-zinc-600 transition-colors"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   )
                 })}
               </div>
@@ -245,7 +351,7 @@ export function ChapterReaderLayout({
                     Manuscript Shown
                   </p>
                   <div className="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
-                    <div className="font-semibold text-gold-400 text-sm">{manuscript.name}</div>
+                    <div className="font-semibold text-amber-600 text-sm">{manuscript.name}</div>
                     <div className="text-xs text-zinc-500 mt-0.5">{manuscript.date_label}</div>
                     <div className="text-xs text-zinc-400">{manuscript.repository}</div>
                     {manuscript.significance && (
@@ -258,7 +364,7 @@ export function ChapterReaderLayout({
                         href={manuscript.institution_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs text-gold-500 hover:text-gold-400 mt-2 transition-colors"
+                        className="inline-flex items-center gap-1 text-xs text-amber-600 hover:text-amber-500 mt-2 transition-colors"
                       >
                         View interactive viewer <ExternalLink size={10} />
                       </a>

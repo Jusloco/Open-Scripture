@@ -6,17 +6,21 @@ import type OpenSeadragonType from 'openseadragon'
 interface Props {
   imageUrl: string
   manuscriptName: string
+  activeVerse?: number
+  totalVerses?: number
 }
 
-export function ManuscriptViewer({ imageUrl, manuscriptName }: Props) {
+export function ManuscriptViewer({ imageUrl, manuscriptName, activeVerse, totalVerses }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const viewerRef = useRef<OpenSeadragonType.Viewer | null>(null)
+  const osdRef = useRef<typeof OpenSeadragonType | null>(null)
 
   useEffect(() => {
     if (!containerRef.current || viewerRef.current) return
 
     import('openseadragon').then((OSD) => {
       if (!containerRef.current) return
+      osdRef.current = OSD.default
       viewerRef.current = OSD.default({
         element: containerRef.current,
         tileSources: { type: 'image', url: imageUrl },
@@ -38,8 +42,17 @@ export function ManuscriptViewer({ imageUrl, manuscriptName }: Props) {
     return () => {
       viewerRef.current?.destroy()
       viewerRef.current = null
+      osdRef.current = null
     }
   }, [imageUrl])
+
+  useEffect(() => {
+    if (!activeVerse || !totalVerses || !viewerRef.current || !osdRef.current) return
+    const OSD = osdRef.current
+    const y = Math.max(0.02, Math.min(0.98, (activeVerse - 0.5) / totalVerses))
+    viewerRef.current.viewport.panTo(new OSD.Point(0.5, y), false)
+    viewerRef.current.viewport.applyConstraints(true)
+  }, [activeVerse, totalVerses])
 
   return (
     <div className="relative w-full h-full bg-zinc-950">

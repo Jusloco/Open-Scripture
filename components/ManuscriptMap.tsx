@@ -2,28 +2,48 @@
 
 import 'leaflet/dist/leaflet.css'
 import { useEffect, useRef } from 'react'
+import type { ManuscriptWitness } from '@/lib/manuscripts'
 
-interface ManuscriptLocation {
-  id: string
-  name: string
-  short_name: string
-  date: number
-  date_label: string
-  century: number
-  lat: number
-  lng: number
-  location: string
-  contents: string
-  significance: string
-  repository: string
-  color_century: string
-  url: string
+const TYPE_COLORS: Record<string, string> = {
+  papyrus: '#b45309',    // amber
+  uncial: '#c2410c',     // orange
+  minuscule: '#7e22ce',  // purple
+  lectionary: '#0f766e', // teal
+  version: '#1d4ed8',    // blue
+}
+
+const CENTURY_COLORS: Record<string, string> = {
+  '2nd': '#b45309',
+  '3rd': '#c2410c',
+  '4th': '#be123c',
+  '5th': '#7e22ce',
+  '6th': '#475569',
+  '7th': '#475569',
+  '8th': '#374151',
+  '9th': '#1f2937',
+}
+
+function getCenturyColor(century: string): string {
+  for (const key of Object.keys(CENTURY_COLORS)) {
+    if (century.startsWith(key)) return CENTURY_COLORS[key]
+  }
+  return '#6b7280'
+}
+
+const TYPE_LABELS: Record<string, string> = {
+  papyrus: 'Papyrus',
+  uncial: 'Uncial',
+  minuscule: 'Minuscule',
+  lectionary: 'Lectionary',
+  version: 'Version',
 }
 
 interface ManuscriptMapProps {
-  manuscripts: ManuscriptLocation[]
+  manuscripts: ManuscriptWitness[]
   maxDate: number
 }
+
+const MAJOR_IDS = new Set(['vaticanus', 'sinaiticus', 'alexandrinus', 'bezae', 'ephraemi', 'p66', 'p75', 'p52'])
 
 export default function ManuscriptMap({ manuscripts, maxDate }: ManuscriptMapProps) {
   const mapRef = useRef<HTMLDivElement>(null)
@@ -33,11 +53,10 @@ export default function ManuscriptMap({ manuscripts, maxDate }: ManuscriptMapPro
   useEffect(() => {
     if (!mapRef.current) return
 
-    const visible = manuscripts.filter(m => m.date <= maxDate)
+    const visible = manuscripts.filter(m => m.date_year <= maxDate && m.lat != null && m.lng != null)
 
-    // Dynamically import leaflet only on client
     import('leaflet').then(L => {
-      // Fix default icon paths (Leaflet + webpack issue)
+      // Fix default icon paths
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       delete (L.Icon.Default.prototype as any)._getIconUrl
       L.Icon.Default.mergeOptions({
@@ -48,8 +67,8 @@ export default function ManuscriptMap({ manuscripts, maxDate }: ManuscriptMapPro
 
       if (!mapInstanceRef.current) {
         const map = L.map(mapRef.current!, {
-          center: [28, 28],
-          zoom: 4,
+          center: [44, 18],
+          zoom: 3,
           zoomControl: true,
           attributionControl: true,
         })
@@ -71,18 +90,24 @@ export default function ManuscriptMap({ manuscripts, maxDate }: ManuscriptMapPro
 
       // Add visible markers
       visible.forEach(ms => {
-        // Size: major codices (vaticanus, sinaiticus, alexandrinus, bezae) get larger radius
-        const isMajorCodex = ['vaticanus', 'sinaiticus', 'alexandrinus', 'bezae', 'ephraemi'].includes(ms.id)
-        const radius = isMajorCodex ? 12 : 8
+        const color = getCenturyColor(ms.century)
+        const isMajor = MAJOR_IDS.has(ms.id)
+        const radius = isMajor ? 11 : ms.type === 'papyrus' ? 8 : 7
 
-        const marker = L.circleMarker([ms.lat, ms.lng], {
+        const marker = L.circleMarker([ms.lat!, ms.lng!], {
           radius,
-          fillColor: ms.color_century,
+          fillColor: color,
           color: '#e4e4e7',
-          weight: 2,
+          weight: 1.5,
           opacity: 1,
           fillOpacity: 0.85,
         })
+
+        const typeLabel = TYPE_LABELS[ms.type] || ms.type
+        const typeColor = TYPE_COLORS[ms.type] || '#6b7280'
+        const linkHtml = ms.institution_url
+          ? `<a href="${ms.institution_url}" target="_blank" rel="noopener noreferrer" style="font-size:11px; color:#b45309; text-decoration:underline;">View at institution →</a>`
+          : ''
 
         const popupContent = `
           <div style="
@@ -95,25 +120,35 @@ export default function ManuscriptMap({ manuscripts, maxDate }: ManuscriptMapPro
             font-family: system-ui, -apple-system, sans-serif;
             border: 1px solid #e4e4e7;
           ">
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
               <span style="
                 display:inline-block;
                 width:10px; height:10px;
                 border-radius:50%;
-                background:${ms.color_century};
+                background:${color};
                 flex-shrink:0;
               "></span>
-              <span style="font-weight:700; font-size:14px; color:#b45309;">${ms.short_name}</span>
+              <span style="font-weight:700; font-size:14px; color:#b45309;">${ms.siglum}</span>
+              <span style="
+                margin-left:auto;
+                font-size:10px;
+                font-weight:600;
+                color:${typeColor};
+                background:${typeColor}18;
+                border:1px solid ${typeColor}30;
+                border-radius:4px;
+                padding:1px 6px;
+                text-transform:uppercase;
+                letter-spacing:0.05em;
+              ">${typeLabel}</span>
             </div>
-            <p style="font-size:13px; font-weight:600; color:#18181b; margin:0 0 4px 0;">${ms.name}</p>
-            <p style="font-size:11px; color:#71717a; margin:0 0 8px 0;">${ms.date_label} · ${ms.location}</p>
-            <div style="border-top:1px solid #e4e4e7; padding-top:8px; margin-bottom:8px;">
-              <p style="font-size:11px; color:#a1a1aa; margin:0 0 2px 0; text-transform:uppercase; letter-spacing:0.05em;">Contents</p>
-              <p style="font-size:12px; color:#3f3f46; margin:0 0 8px 0;">${ms.contents}</p>
-              <p style="font-size:11px; color:#a1a1aa; margin:0 0 2px 0; text-transform:uppercase; letter-spacing:0.05em;">Significance</p>
-              <p style="font-size:12px; color:#3f3f46; margin:0 0 8px 0;">${ms.significance}</p>
+            <p style="font-size:13px; font-weight:600; color:#18181b; margin:0 0 2px 0;">${ms.name}</p>
+            <p style="font-size:11px; color:#71717a; margin:0 0 8px 0;">${ms.date_label}</p>
+            <div style="border-top:1px solid #e4e4e7; padding-top:8px;">
               <p style="font-size:11px; color:#a1a1aa; margin:0 0 2px 0; text-transform:uppercase; letter-spacing:0.05em;">Repository</p>
-              <p style="font-size:12px; color:#3f3f46; margin:0;">${ms.repository}</p>
+              <p style="font-size:12px; color:#3f3f46; margin:0 0 6px 0;">${ms.repository}</p>
+              ${ms.significance ? `<p style="font-size:11px; color:#71717a; font-style:italic; margin:0 0 6px 0;">${ms.significance}</p>` : ''}
+              ${linkHtml}
             </div>
           </div>
         `
