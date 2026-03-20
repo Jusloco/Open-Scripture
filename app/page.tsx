@@ -1,12 +1,24 @@
 import Link from 'next/link'
 import VerseSearchBar from '@/components/VerseSearchBar'
 import { getBookData, getMarkBookData, getLukeBookData } from '@/lib/data'
-import { BookOpen, Shield, Users, GitBranch } from 'lucide-react'
+import { BookOpen, Shield, Users, GitBranch, Scroll, Map, BookText } from 'lucide-react'
+import witnessesRaw from '@/data/manuscript-witnesses.json'
+
+interface ManuscriptWitness {
+  id: string
+  date_year: number
+  type: string
+  language: string
+}
 
 export default function HomePage() {
   const book = getBookData()
   const markBook = getMarkBookData()
   const lukeBook = getLukeBookData()
+
+  const witnesses = witnessesRaw as ManuscriptWitness[]
+  const p52 = witnesses.find(w => w.id === 'p52')
+  const greekCount = witnesses.filter(w => w.language === 'Greek').length
 
   const quickLinks = [
     { ref: 'John 1:1', href: '/john/1/1', desc: 'The most debated verse in the Bible' },
@@ -18,33 +30,194 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden border-b border-zinc-200">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#92400e15_0%,_transparent_70%)]" />
+      {/* Hero — dark, full-impact */}
+      <section className="relative overflow-hidden bg-zinc-950 min-h-[85vh] flex items-center">
+        {/* Faded manuscript background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/3/32/P52_recto.jpg)',
+            opacity: 0.07,
+          }}
+        />
+        {/* Subtle radial glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#92400e18_0%,_transparent_65%)]" />
+
         <div className="relative mx-auto max-w-4xl px-4 py-24 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-amber-700/20 bg-amber-700/5 px-3 py-1 text-xs text-amber-700 mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber-700" />
-            Now covering John · Mark · Luke — {book.chapters.length + markBook.chapters.length + lukeBook.chapters.length} chapters · {Object.keys(book.key_verses).length + Object.keys(markBook.key_verses).length + Object.keys(lukeBook.key_verses).length}+ key verses documented
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-amber-700/30 bg-amber-700/10 px-4 py-1.5 text-xs text-amber-400 mb-8 font-medium tracking-wide">
+            <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+            5,800+ Greek manuscripts. Open access.
           </div>
 
-          <h1 className="animate-fade-in-up text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl md:text-6xl leading-tight mb-6">
-            The Bible is the best-documented{' '}
-            <span className="text-amber-700">ancient text</span>{' '}
-            in history.
+          <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl leading-tight mb-6">
+            The most documented text
+            <br />
+            <span className="text-amber-400">in ancient history.</span>
           </h1>
 
-          <p className="mx-auto max-w-2xl text-lg text-zinc-500 leading-relaxed mb-10">
-            You should be able to verify that in 30 seconds. Look up any verse in the Gospel of John and see exactly what the manuscript evidence says — earliest copies, Church Father citations, and textual variants explained in plain English.
+          <p className="mx-auto max-w-2xl text-lg text-zinc-300 leading-relaxed mb-10">
+            Every Bible manuscript ever found — in your browser, for free.
+            <br className="hidden sm:block" />
+            Judge the evidence yourself.
           </p>
 
           <VerseSearchBar />
 
-          <p className="mt-4 text-sm text-zinc-400">
-            Or browse the{' '}
-            <Link href="/john" className="text-amber-700/70 hover:text-amber-700 underline underline-offset-2 transition-colors">
-              full Gospel of John
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/john/1"
+              className="inline-flex items-center gap-2 rounded-lg bg-amber-600 px-6 py-3 text-sm font-semibold text-white hover:bg-amber-500 transition-colors"
+            >
+              Start with John 1 →
             </Link>
+            <Link
+              href="/manuscripts"
+              className="inline-flex items-center gap-2 rounded-lg border border-zinc-600 px-6 py-3 text-sm font-semibold text-zinc-200 hover:border-zinc-400 hover:text-white transition-colors"
+            >
+              Explore the Manuscripts
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats bar — immediately below hero */}
+      <section className="border-y border-zinc-200 bg-zinc-100/50">
+        <div className="mx-auto max-w-4xl px-4 py-10">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 text-center">
+            <div>
+              <p className="text-3xl font-bold text-amber-700">25,000+</p>
+              <p className="text-sm text-zinc-500 mt-1">Total manuscripts</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-amber-700">~100 AD</p>
+              <p className="text-sm text-zinc-500 mt-1">Earliest fragment</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-amber-700">5,800+</p>
+              <p className="text-sm text-zinc-500 mt-1">Greek manuscripts</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-amber-700">40+</p>
+              <p className="text-sm text-zinc-500 mt-1">Languages &amp; dialects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Claim vs. Evidence */}
+      <section className="mx-auto max-w-4xl px-4 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-zinc-900 mb-3">The claim vs. the evidence</h2>
+          <p className="text-zinc-500 max-w-xl mx-auto">
+            You&rsquo;ve heard the skeptic talking points. Here&rsquo;s what the actual manuscripts say.
           </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {/* Skeptic claims */}
+          <div className="rounded-2xl border border-red-200 bg-red-50 p-8">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="h-2.5 w-2.5 rounded-full bg-red-500 flex-shrink-0" />
+              <h3 className="font-semibold text-zinc-800 text-lg">What skeptics say</h3>
+            </div>
+            <ul className="space-y-4">
+              {[
+                'Scribes changed the text over centuries',
+                "We don't have the originals",
+                'The Bible has thousands of errors',
+                'Constantine decided what was Scripture',
+              ].map(claim => (
+                <li key={claim} className="flex items-start gap-3 text-zinc-600 text-sm leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-red-400 flex-shrink-0" />
+                  {claim}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Manuscript evidence */}
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 p-8">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="h-2.5 w-2.5 rounded-full bg-amber-600 flex-shrink-0" />
+              <h3 className="font-semibold text-zinc-800 text-lg">What the manuscripts show</h3>
+            </div>
+            <ul className="space-y-4">
+              {[
+                `P52 dates to ~${p52?.date_year ?? 125} AD — within 30 years of composition`,
+                `${greekCount > 0 ? greekCount + '+' : '5,800+'} Greek copies agree on 99.5% of the text`,
+                'Variants are catalogued, explained, and visible here',
+                'No church council "invented" the core text',
+              ].map(point => (
+                <li key={point} className="flex items-start gap-3 text-zinc-700 text-sm leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-amber-600 flex-shrink-0" />
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools showcase */}
+      <section className="border-t border-zinc-100 bg-zinc-50 py-20">
+        <div className="mx-auto max-w-4xl px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-zinc-900 mb-3">Explore the evidence yourself</h2>
+            <p className="text-zinc-500 max-w-xl mx-auto">
+              Three tools. Zero paywalls. All built on primary sources.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div className="rounded-2xl border border-zinc-200 bg-white p-6 flex flex-col">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-700/10">
+                <Scroll className="h-5 w-5 text-amber-700" />
+              </div>
+              <h3 className="font-semibold text-zinc-900 text-lg mb-2">Manuscript Viewer</h3>
+              <p className="text-sm text-zinc-500 leading-relaxed flex-1">
+                Open actual scans of 2nd-century papyri. See the ink, the handwriting, the history.
+              </p>
+              <Link
+                href="/john/1"
+                className="mt-5 inline-flex items-center text-sm font-medium text-amber-700 hover:text-amber-600 transition-colors"
+              >
+                Explore John 1 →
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-zinc-200 bg-white p-6 flex flex-col">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-700/10">
+                <Map className="h-5 w-5 text-amber-700" />
+              </div>
+              <h3 className="font-semibold text-zinc-900 text-lg mb-2">World Map</h3>
+              <p className="text-sm text-zinc-500 leading-relaxed flex-1">
+                91 manuscript locations plotted across the ancient world — Egypt, Rome, Constantinople, and beyond.
+              </p>
+              <Link
+                href="/manuscripts"
+                className="mt-5 inline-flex items-center text-sm font-medium text-amber-700 hover:text-amber-600 transition-colors"
+              >
+                Open the Manuscripts →
+              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-zinc-200 bg-white p-6 flex flex-col">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-700/10">
+                <BookText className="h-5 w-5 text-amber-700" />
+              </div>
+              <h3 className="font-semibold text-zinc-900 text-lg mb-2">Verse Evidence</h3>
+              <p className="text-sm text-zinc-500 leading-relaxed flex-1">
+                Every key verse: earliest copies, manuscript counts, Church Father citations, and variants explained plainly.
+              </p>
+              <Link
+                href="/john/1/1"
+                className="mt-5 inline-flex items-center text-sm font-medium text-amber-700 hover:text-amber-600 transition-colors"
+              >
+                Try John 1:1 →
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -58,7 +231,7 @@ export default function HomePage() {
             <Link
               key={link.href}
               href={link.href}
-              className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all transition-transform duration-200"
+              className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all duration-200"
             >
               <p className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors mb-1">{link.ref}</p>
               <p className="text-sm text-zinc-500">{link.desc}</p>
@@ -66,21 +239,21 @@ export default function HomePage() {
           ))}
           <Link
             href="/compare"
-            className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all transition-transform duration-200"
+            className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all duration-200"
           >
             <p className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors mb-1">NT vs. Caesar &amp; Plato</p>
             <p className="text-sm text-zinc-500">How does the NT compare to other ancient texts?</p>
           </Link>
           <Link
             href="/manuscripts"
-            className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all transition-transform duration-200"
+            className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all duration-200"
           >
             <p className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors mb-1">Key Manuscripts</p>
             <p className="text-sm text-zinc-500">P52, P66, Sinaiticus, Vaticanus and more</p>
           </Link>
           <Link
             href="/timeline"
-            className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all transition-transform duration-200"
+            className="group rounded-xl border border-zinc-200 bg-white p-4 hover:border-amber-700/30 hover:bg-zinc-50 hover:scale-[1.02] transition-all duration-200"
           >
             <p className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors mb-1">Manuscript Timeline</p>
             <p className="text-sm text-zinc-500">100 AD to 500 AD — visualized</p>
@@ -145,30 +318,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats bar */}
-      <section className="border-y border-zinc-200 bg-zinc-100/50">
-        <div className="mx-auto max-w-4xl px-4 py-10">
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 text-center">
-            <div className="animate-fade-in-up delay-100">
-              <p className="text-3xl font-bold text-amber-700">25,000+</p>
-              <p className="text-sm text-zinc-500 mt-1">Total manuscripts</p>
-            </div>
-            <div className="animate-fade-in-up delay-200">
-              <p className="text-3xl font-bold text-amber-700">~100 AD</p>
-              <p className="text-sm text-zinc-500 mt-1">Earliest fragment</p>
-            </div>
-            <div className="animate-fade-in-up delay-200">
-              <p className="text-3xl font-bold text-amber-700">5,800+</p>
-              <p className="text-sm text-zinc-500 mt-1">Greek manuscripts</p>
-            </div>
-            <div className="animate-fade-in-up delay-300">
-              <p className="text-3xl font-bold text-amber-700">40+</p>
-              <p className="text-sm text-zinc-500 mt-1">Languages &amp; dialects</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How it works */}
       <section className="mx-auto max-w-4xl px-4 py-20">
         <h2 className="text-2xl font-bold text-zinc-900 mb-10 text-center">How it works</h2>
@@ -205,6 +354,24 @@ export default function HomePage() {
           </p>
           <Link href="/john/7/53" className="mt-4 inline-block text-sm text-amber-700 hover:text-amber-600 transition-colors">
             See the full evidence for John 7:53 →
+          </Link>
+        </div>
+      </section>
+
+      {/* Bottom CTA banner */}
+      <section className="bg-zinc-950 py-20">
+        <div className="mx-auto max-w-3xl px-4 text-center">
+          <h2 className="text-3xl font-bold text-amber-400 mb-4">
+            Don&rsquo;t take anyone&rsquo;s word for it — including ours.
+          </h2>
+          <p className="text-zinc-300 text-lg mb-8">
+            The manuscripts are here. Explore them yourself.
+          </p>
+          <Link
+            href="/john/1"
+            className="inline-flex items-center gap-2 rounded-lg bg-amber-600 px-8 py-4 text-base font-semibold text-white hover:bg-amber-500 transition-colors"
+          >
+            Open John 1 — the most examined chapter in history →
           </Link>
         </div>
       </section>
